@@ -11,14 +11,24 @@ const Hero = () => {
         </div>
         <div className="landing_hero_wrap">
           <div className="hero_content">
-            <div className="div_1">
+            <div
+              className="div_1"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
               <p>
                 Do you need your brand to look endearing on the web? need a user
                 friendly app to create value? or you need help running your
                 online business?{" "}
               </p>
             </div>
-            <div className="div_2">
+            <div
+              className="div_2"
+              data-aos="fade-right"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
               <div className="div_2_content">
                 <p>
                   We provide all these with ease. Softkodes is a tech solutions

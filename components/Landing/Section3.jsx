@@ -6,15 +6,25 @@ const Section3 = () => {
     <section className="section3">
       <div className="container">
         <div className="section3_card">
-          <div className="section3_img">
+          <div
+            className="section3_img"
+            data-aos="flip-down"
+            data-aos-delay="400"
+            data-aos-easing="ease-out-back"
+            data-aos-duration="2000"
+          >
             <Image
               src="/assets/image9.png"
-              width={961}
-              height={693}
+              width={729}
+              height={526}
               alt="image"
             />
           </div>
-          <div className="section3_content">
+          <div
+            className="section3_content"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac tellus
             nisl nisi.
           </div>

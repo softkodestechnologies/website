@@ -7,8 +7,10 @@ const Section2 = () => {
       <div className="part1">
         <div className="container">
           <div className="content">
-            <h1>Design Interactive & Responsive Prototypes</h1>
-            <h2>
+            <h1 data-aos="fade-right" data-aos-delay="300">
+              Design Interactive & Responsive Prototypes
+            </h1>
+            <h2 data-aos="fade-right" data-aos-delay="300">
               Our <span>Prototypes</span> are created with{" "}
               <span>responsive design</span> which displays impeccably any
               screen size, including mobile, tablet, and desktop.
@@ -17,16 +19,22 @@ const Section2 = () => {
           <div className="dir">
             <Image
               alt="arrow"
-              width={530}
-              height={220}
+              width={427}
+              height={158}
               src="/assets/arrow1.svg"
             />
           </div>
-          <div className="image">
+          <div
+            className="image"
+            data-aos="flip-left"
+            data-aos-delay="300"
+            data-aos-easing="ease-out-back"
+            data-aos-duration="2000"
+          >
             <Image
               alt="image"
-              width={652}
-              height={1055}
+              width={481}
+              height={687}
               src="/assets/image7.png"
             />
           </div>
@@ -35,11 +43,16 @@ const Section2 = () => {
 
       <div className="part2">
         <div className="container">
-          <div>
+          <div
+            data-aos="flip-right"
+            data-aos-delay="300"
+            data-aos-easing="ease-out-back"
+            data-aos-duration="2000"
+          >
             <Image
               alt="image"
-              width={688}
-              height={1080}
+              width={482}
+              height={668}
               src="/assets/image8.png"
             />
           </div>
@@ -47,15 +60,19 @@ const Section2 = () => {
             <div className="dir">
               <Image
                 alt="arrow"
-                width={379}
-                height={266}
+                width={293}
+                height={205}
                 src="/assets/arrow2.svg"
               />
             </div>
             <div className="content">
-              <h1>Development</h1>
-              <h2>Code Quickly with us.</h2>
-              <h3>
+              <h1 data-aos="fade-left" data-aos-delay="300">
+                Development
+              </h1>
+              <h2 data-aos="fade-left" data-aos-delay="300">
+                Code Quickly with us.
+              </h2>
+              <h3 data-aos="fade-left" data-aos-delay="300">
                 With us, you don’t have a problem with urgency. Our pace though
                 swift, will provide you with the best possible results. We are
                 committed to providing amazing products in a timely manner.

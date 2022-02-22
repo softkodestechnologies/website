@@ -5,23 +5,25 @@ const Section1 = () => {
     <section className="section1">
       <div className="container">
         <div className="section1_wrap">
-          <h1>WHAT WE DO</h1>
+          <h1 data-aos="fade-down" data-aos-delay="300">
+            WHAT WE DO
+          </h1>
           <div className="section1_cards">
-            <div className="card">
+            <div className="card" data-aos="fade-up-right" data-aos-delay="450">
               <Image
                 src="/assets/image1.png"
                 alt="test"
-                width={421}
-                height={657}
+                width={342}
+                height={534}
               />
             </div>
 
-            <div className="card">
+            <div className="card" data-aos="fade-down" data-aos-delay="450">
               <Image
                 src="/assets/image2.png"
                 alt="test"
-                width={477}
-                height={337}
+                width={387}
+                height={273}
               />
               <div className="content">
                 <h3>Development</h3>
@@ -31,21 +33,29 @@ const Section1 = () => {
                 </p>
               </div>
             </div>
-            <div className="card">
+            <div
+              className="card"
+              data-aos="fade-down-left"
+              data-aos-delay="450"
+            >
               <Image
                 src="/assets/image3.png"
                 alt="test"
-                width={364}
-                height={670}
+                width={295}
+                height={545}
               />
             </div>
 
-            <div className="card">
+            <div
+              className="card"
+              data-aos="zoom-out-right"
+              data-aos-delay="450"
+            >
               <Image
                 src="/assets/image4.png"
                 alt="test"
-                width={391}
-                height={624}
+                width={317}
+                height={507}
               />
               <div className="content">
                 <h3>Design</h3>
@@ -57,12 +67,12 @@ const Section1 = () => {
               </div>
             </div>
 
-            <div className="card">
+            <div className="card" data-aos="zoom-out-down" data-aos-delay="450">
               <Image
                 src="/assets/image5.png"
                 alt="test"
-                width={433}
-                height={325}
+                width={352}
+                height={264}
               />
               <div className="content">
                 <h3>Development</h3>
@@ -73,12 +83,12 @@ const Section1 = () => {
               </div>
             </div>
 
-            <div className="card">
+            <div className="card" data-aos="zoom-out-left" data-aos-delay="450">
               <Image
                 src="/assets/image6.png"
                 alt="test"
-                width={399}
-                height={623}
+                width={324}
+                height={506}
               />
               <div className="content">
                 <h3>Training</h3>

@@ -2,10 +2,20 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import "../styles/globals.scss";
 import { Loading } from "../components";
+import { ParallaxProvider } from "react-scroll-parallax";
+import AOS from "aos";
+// import aos styles
+import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    // here you can add your aos options
+    AOS.init({
+      offset: 100,
+    });
+  }, []);
 
   useEffect(() => {
     const handleStart = (url) => {
@@ -19,8 +29,10 @@ function MyApp({ Component, pageProps }) {
   }, [router]);
   return (
     <>
-      <Loading loading={loading} />
-      <Component {...pageProps} />
+      <ParallaxProvider>
+        <Loading loading={loading} />
+        <Component {...pageProps} />
+      </ParallaxProvider>
     </>
   );
 }
