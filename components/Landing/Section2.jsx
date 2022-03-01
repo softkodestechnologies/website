@@ -44,6 +44,7 @@ const Section2 = () => {
       <div className="part2">
         <div className="container">
           <div
+            className="image"
             data-aos="flip-right"
             data-aos-delay="300"
             data-aos-easing="ease-out-back"

@@ -9,49 +9,55 @@ const Section4 = () => {
         <h1>WE ALSO TRAIN PEOPLE ON</h1>
         <div className="section4_parts">
           <div className="section4_part">
-            <Parallax speed={-10}>
+            <Parallax translateX={["400px", "0px"]}>
               <h2>WEB DESIGN</h2>
             </Parallax>
             <div className="section4_img">
-              <Parallax speed={20}>
-                <Image
-                  src="/assets/image10.png"
-                  alt="image"
-                  width={460}
-                  height={460}
-                />
+              <Parallax rotate={[20, 0]}>
+                <div className="parallax_wrap parallax_wrap1">
+                  <Image
+                    src="/assets/image11.png"
+                    alt="image"
+                    width={460}
+                    height={460}
+                  />
+                </div>
               </Parallax>
             </div>
           </div>
 
           <div className="section4_part">
-            <Parallax speed={-10}>
+            <Parallax translateX={["400px", "0px"]}>
               <h2>MOBILE DEVELOPMENT</h2>
             </Parallax>
             <div className="section4_img">
-              <Parallax speed={20}>
-                <Image
-                  src="/assets/image11.png"
-                  alt="image"
-                  width={460}
-                  height={460}
-                />
+              <Parallax rotate={[20, 0]}>
+                <div className="parallax_wrap parallax_wrap2">
+                  <Image
+                    src="/assets/image11.png"
+                    alt="image"
+                    width={460}
+                    height={460}
+                  />
+                </div>
               </Parallax>
             </div>
           </div>
 
           <div className="section4_part">
-            <Parallax speed={-10}>
+            <Parallax translateX={["-400px", "0px"]}>
               <h2>GAME DEVELOPMENT</h2>
             </Parallax>
             <div className="section4_img">
-              <Parallax speed={20}>
-                <Image
-                  src="/assets/image12.png"
-                  alt="image"
-                  width={460}
-                  height={460}
-                />
+              <Parallax rotate={[20, 0]}>
+                <div className="parallax_wrap parallax_wrap3">
+                  <Image
+                    src="/assets/image12.png"
+                    alt="image"
+                    width={460}
+                    height={460}
+                  />
+                </div>
               </Parallax>
             </div>
           </div>

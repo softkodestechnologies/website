@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import "../styles/globals.scss";
-import { Loading } from "../components";
+import "../styles/responsive.scss";
+import { Loading, Nav, TopButton } from "../components";
 import { ParallaxProvider } from "react-scroll-parallax";
 import AOS from "aos";
 // import aos styles
@@ -9,7 +10,6 @@ import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const [loading, setLoading] = useState(false);
   useEffect(() => {
     // here you can add your aos options
     AOS.init({
@@ -17,21 +17,22 @@ function MyApp({ Component, pageProps }) {
     });
   }, []);
 
-  useEffect(() => {
-    const handleStart = (url) => {
-      url !== router.pathname ? setLoading(true) : setLoading(false);
-    };
-    const handleComplete = (url) => setLoading(false);
+  // useEffect(() => {
+  //   const handleStart = (url) => {
+  //     url !== router.pathname ? setLoading(true) : setLoading(false);
+  //   };
+  //   const handleComplete = (url) => setLoading(false);
 
-    router.events.on("routeChangeStart", handleStart);
-    router.events.on("routeChangeComplete", handleComplete);
-    router.events.on("routeChangeError", handleComplete);
-  }, [router]);
+  //   router.events.on("routeChangeStart", handleStart);
+  //   router.events.on("routeChangeComplete", handleComplete);
+  //   router.events.on("routeChangeError", handleComplete);
+  // }, [router]);
   return (
     <>
       <ParallaxProvider>
-        <Loading loading={loading} />
+        <Nav />
         <Component {...pageProps} />
+        <TopButton />
       </ParallaxProvider>
     </>
   );
