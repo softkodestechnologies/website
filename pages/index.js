@@ -17,19 +17,19 @@ import {
 } from "../components";
 
 export default function Home() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [percent, setPercent] = useState(0);
-  // useEffect(() => {
-  //   if (loading === true) {
-  //     let clock = setInterval(() => {
-  //       setPercent(percent++);
-  //       if (percent > 100) {
-  //         clearInterval(clock);
-  //         setLoading(false);
-  //       }
-  //     }, 50);
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (loading === true) {
+      let clock = setInterval(() => {
+        setPercent(percent++);
+        if (percent > 100) {
+          clearInterval(clock);
+          setLoading(false);
+        }
+      }, 50);
+    }
+  }, []);
   return (
     <div>
       <Head>
