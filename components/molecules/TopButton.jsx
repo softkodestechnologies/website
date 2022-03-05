@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useRef, useEffect } from "react";
 // import { FiChevronUp } from "react-icons/fi";
 
@@ -51,8 +52,7 @@ const TopButton = () => {
 
   return (
     <div style={top} onClick={topScroll} ref={topRef}>
-      {/* <FiChevronUp /> */}
-      Top
+      <Image src="/assets/up.svg" width={40} height={40} alt="top" />
     </div>
   );
 };

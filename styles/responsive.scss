@@ -5,6 +5,52 @@
   .section3 .section3_card::after {
     transform: rotate(-90deg) translateX(-5%) translateY(-5%);
   }
+  .section1_aux_img2 {
+    width: 200px;
+    height: auto;
+  }
+  .section1_aux_img1 {
+    width: 200px;
+    height: auto;
+  }
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content1
+    .letter
+    h2,
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content2
+    .letter
+    h2 {
+    font-size: 50px;
+  }
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content1
+    .letter
+    .no,
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content2
+    .letter
+    .no {
+    font-size: 50px;
+  }
+  .section2_cards .section2_card_mul .section2_content .section2_content1 p,
+  .section2_cards .section2_card_mul .section2_content .section2_content2 p {
+    font-size: 24px;
+  }
+  .career_section4 .search_cards {
+    column-gap: 30px;
+  }
+  .career_section4 .search_wrap h1 {
+    margin-right: 1rem;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -69,9 +115,60 @@
   .training3 .training3_cards {
     grid-template-columns: repeat(2, 1fr);
   }
+  .career_section1 .section1_main_wrap .section1_main {
+    flex: 6;
+  }
+  .section2_cards .section2_card .section2_content .letter h2 {
+    font-size: 50px;
+  }
+  .section2_cards .section2_card .section2_content .no {
+    font-size: 50px;
+  }
+  .section2_cards .section2_card .section2_content .letter p {
+    font-size: 24px;
+  }
+  .section2_cards .section2_card .section2_img {
+    flex: 1;
+    margin-left: 3rem;
+    width: 340px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section2_img1 {
+    width: 350px;
+    height: auto;
+  }
+  .section2_cards .section2_card_mul .section2_img .section2_img2 {
+    width: 320px;
+    height: auto;
+    transform: translateX(100px) translateY(-100px);
+  }
+  .career_section4 .search_cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    column-gap: 30px;
+  }
 }
 
 @media (max-width: 1024px) {
+  .head_black {
+    background-color: #000;
+    color: #fff;
+    .logo {
+      display: none;
+    }
+    .logo_aux {
+      display: block;
+    }
+    .bars {
+      display: none;
+    }
+    .bars_aux {
+      display: block !important;
+    }
+  }
   .container {
     padding: 0 44px;
   }
@@ -153,6 +250,141 @@
   .training2 h1,
   .training3 h1 {
     font-size: 65px;
+  }
+  .contact h1 {
+    font-size: 120px;
+  }
+  .contact
+    .contact_form_wrap
+    form
+    .services
+    .services_wrap
+    .check_control
+    label {
+    font-size: 33px;
+  }
+  .contact .contact_form_wrap form .budget h2 {
+    font-size: 35px;
+  }
+  .contact
+    .contact_form_wrap
+    form
+    .services
+    .services_wrap
+    .check_control
+    input {
+    width: 50px;
+    height: 50px;
+  }
+  .contact .contact_form_wrap form .services h2 {
+    font-size: 35px;
+  }
+  .news .news_card .news_content p {
+    font-size: 24px;
+  }
+  .newsletter h1 {
+    font-size: 100px;
+    margin-bottom: 100px;
+  }
+  .newsletter .control input {
+    font-size: 30px;
+  }
+  .career_section1 {
+    background-color: #000;
+    color: #fff;
+  }
+  .section1_main_img2,
+  .section1_main_img1 {
+    display: none;
+  }
+  .section1_main_wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .section1_aux_wrap {
+    display: none !important;
+  }
+  .career_section1 .section1_main_wrap .section1_main .section1_btn {
+    text-align: left;
+  }
+  .career_section1 .section1_main_wrap .section1_main .section1_btn button {
+    background: rgba(28, 27, 27, 1);
+    color: #fff;
+  }
+  .section1_mob_wrap {
+    display: flex !important;
+    padding: 7rem 0 2rem 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section1_mob_wrap .section1_aux_img3 {
+    align-self: flex-end;
+  }
+  .section1_aux_img1,
+  .section1_aux_img2,
+  .section1_aux_img3 {
+    margin-right: 2rem;
+  }
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content1
+    .letter
+    h2,
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content2
+    .letter
+    h2 {
+    font-size: 35px;
+  }
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content1
+    .letter
+    .no,
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content2
+    .letter
+    .no {
+    font-size: 35px;
+  }
+  .section2_cards .section2_card_mul .section2_content .section2_content1 p,
+  .section2_cards .section2_card_mul .section2_content .section2_content2 p {
+    font-size: 18px;
+  }
+  .section2_img1 {
+    width: 300px;
+    height: auto;
+  }
+  .section2_cards .section2_card_mul .section2_img .section2_img2 {
+    width: 280px;
+    height: auto;
+    transform: translateX(100px) translateY(-100px);
+  }
+  .career_section3 .section3_card .section3_content h1::after {
+    left: 0px;
+  }
+  .career_section3 .section3_card .section3_content h1,
+  .career_section3 .section3_card .section3_content h2 {
+    font-size: 40px;
+  }
+  .career_section3 .section3_card .section3_content h1::after {
+    width: 300px;
+    bottom: -14%;
+  }
+  .career_section3 .section3_card .section3_content p {
+    font-size: 24px;
+  }
+  .career_section4 .search_wrap {
+    display: block;
+  }
+  .career_section4 .search_wrap .search_control {
+    margin-top: 2rem;
   }
 }
 
@@ -391,6 +623,155 @@
   .training3 h1 {
     font-size: 50px;
   }
+  .member h1 {
+    font-size: 50px;
+  }
+  .member .member_form_wrap .member_head h2 {
+    font-size: 29px;
+  }
+  .member .member_form_wrap .member_head .member_head_img {
+    width: 30px;
+    height: auto;
+  }
+  .member .member_form_wrap h3 {
+    margin-left: 33px;
+    font-size: 29px;
+  }
+  .member .member_form_wrap form .control input,
+  .member .member_form_wrap form .control textarea,
+  .contact .contact_form_wrap form .control input,
+  .contact .contact_form_wrap form .control textarea {
+    padding: 19px 15px;
+    font-size: 24px;
+  }
+  .member .member_form_wrap .two_btns button,
+  .member .member_form_wrap .one button {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+  .member .member_form_wrap .two_btns button {
+    margin: 0rem 0.8rem 0 0.8rem;
+  }
+
+  .contact h1 {
+    font-size: 65px;
+    line-height: 100px;
+  }
+
+  .contact
+    .contact_form_wrap
+    form
+    .services
+    .services_wrap
+    .check_control
+    label {
+    font-size: 25px;
+  }
+  .contact .contact_form_wrap form .budget .budget_wrap .budget_btn {
+    font-size: 25px;
+  }
+  .news .news_main h1 {
+    font-size: 150px;
+  }
+  .news .news_main p {
+    font-size: 30px;
+  }
+  .section2_cards .section2_card {
+    flex-direction: column;
+  }
+  .section2_cards .section2_card .section2_img {
+    margin-top: 3rem;
+    margin-left: 5rem;
+  }
+  .career_section2 h1 {
+    font-size: 90px;
+  }
+  .career_section2 h1 .ring .ring_img {
+    width: 250px;
+    height: auto;
+  }
+  .career_section2 h1 {
+    margin-bottom: 4rem;
+  }
+  .section2_cards .section2_card_mul .section2_img {
+    display: none;
+  }
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content1
+    .letter
+    h2,
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content2
+    .letter
+    h2 {
+    font-size: 50px;
+  }
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content1
+    .letter
+    .no,
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content2
+    .letter
+    .no {
+    font-size: 50px;
+  }
+  .section2_cards .section2_card_mul .section2_content .section2_content1 p,
+  .section2_cards .section2_card_mul .section2_content .section2_content2 p {
+    font-size: 24px;
+  }
+  .section2_cards .section2_card_mul .section2_content .section2_content1 p,
+  .section2_cards .section2_card_mul .section2_content .section2_content2 p {
+    margin-left: 4rem;
+  }
+  .career_section3 {
+    background-color: #000;
+    color: #fff;
+  }
+  .career_section3 .section3_svg {
+    display: none;
+  }
+  .career_section3 .section3_svg_mob {
+    display: block;
+  }
+  .career_section3 .section3_card {
+    flex-direction: column;
+  }
+  .career_section3 .section3_card .section3_content p {
+    text-align: center;
+  }
+  .career_section3 .section3_card .section3_img {
+    text-align: center;
+    margin-top: 0;
+  }
+  .career_section3 .section3_card .section3_content h1::after {
+    display: none;
+  }
+
+  .career_section3 .section3_card .section3_content h1 span::after {
+    position: absolute;
+    bottom: 8%;
+    left: 25%;
+    // transform: translateX(35px);
+    width: 137px;
+    height: 11.9px;
+    content: "";
+    background-image: url("/assets/flex_small.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .career_section4 .search_cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 580px) {
@@ -507,6 +888,110 @@
   .training3 h1 {
     font-size: 35px;
   }
+  .contact
+    .contact_form_wrap
+    form
+    .services
+    .services_wrap
+    .check_control
+    label {
+    font-size: 20px;
+  }
+  .contact
+    .contact_form_wrap
+    form
+    .services
+    .services_wrap
+    .check_control
+    input {
+    width: 30px;
+    height: 30px;
+  }
+  .contact .contact_form_wrap form .budget .budget_wrap .budget_btn {
+    font-size: 20px;
+  }
+  .news .news_card {
+    padding: 6rem 0;
+  }
+  .news .news_card .news_content h1 {
+    font-size: 45px;
+  }
+  .news .news_main h1 {
+    font-size: 120px;
+  }
+  .news .news_card .news_content p {
+    font-size: 20px;
+  }
+  .newsletter h1 {
+    font-size: 60px;
+    line-height: 95px;
+  }
+  .newsletter .control input {
+    padding: 15px 0;
+  }
+  .newsletter .control button {
+    padding: 12px 84px;
+    font-size: 28px;
+  }
+  .section2_cards .section2_card .section2_content .letter h2 {
+    font-size: 28px;
+    margin-bottom: 1rem;
+  }
+  .section2_cards .section2_card .section2_content .no {
+    font-size: 30px;
+    margin-right: 0.6rem;
+  }
+  .section2_cards .section2_card .section2_content .letter p {
+    font-size: 15px;
+  }
+  .section2_cards .section2_card .section2_img {
+    width: 213px;
+    height: auto;
+    margin-left: 2.5rem;
+  }
+  .career_section2 h1 {
+    font-size: 70px;
+  }
+  .career_section2 h1 .ring .ring_img {
+    width: 200px;
+    height: auto;
+  }
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content1
+    .letter
+    h2,
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content2
+    .letter
+    h2 {
+    font-size: 28px;
+  }
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content1
+    .letter
+    .no,
+  .section2_cards
+    .section2_card_mul
+    .section2_content
+    .section2_content2
+    .letter
+    .no {
+    font-size: 28px;
+  }
+  .section2_cards .section2_card_mul .section2_content .section2_content1 p,
+  .section2_cards .section2_card_mul .section2_content .section2_content2 p {
+    font-size: 15px;
+  }
+  .section2_cards .section2_card_mul .section2_content .section2_content1 p,
+  .section2_cards .section2_card_mul .section2_content .section2_content2 p {
+    margin-left: 2rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -599,6 +1084,58 @@
     padding: 100px 0px;
     font-size: 22px;
   }
+  .member {
+    padding: 2.5rem 0;
+  }
+  .member h1 {
+    font-size: 34px;
+  }
+  .member .member_form_wrap .member_head h2 {
+    font-size: 20px;
+  }
+  .member .member_form_wrap .member_head .member_head_img {
+    width: 20px;
+    height: auto;
+  }
+  .member .member_form_wrap h3 {
+    margin-left: 33px;
+    font-size: 19px;
+  }
+  .career_section1 .section1_main_wrap .section1_main h1 {
+    font-size: 90px;
+  }
+  .career_section1 .section1_main_wrap .section1_main p {
+    font-size: 27px;
+  }
+  .career_section1 .section1_main_wrap .section1_main .section1_btn button {
+    font-size: 20px;
+    padding: 12px 30px;
+  }
+  .section1_aux_img1,
+  .section1_aux_img2,
+  .section1_aux_img3 {
+    margin-right: 1rem;
+  }
+  .career_section3 .section3_card .section3_img {
+    width: 192px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .career_section3 .section3_card .section3_content p {
+    font-size: 18px;
+  }
+  .career_section3 .section3_card .section3_content h1 span::after {
+    bottom: 8%;
+    left: 20%;
+  }
+  .career_section4 .search_wrap h1 {
+    font-size: 33px;
+    text-align: center;
+  }
+  .career_section4 .search_wrap .search_control input {
+    font-size: 14px;
+    padding: 0.8rem 1rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -634,5 +1171,80 @@
   .training2 .container,
   .training3 .container {
     padding: 0 5px;
+  }
+  .member .member_form_wrap form .control input,
+  .member .member_form_wrap form .control textarea,
+  .contact .contact_form_wrap form .control input,
+  .contact .contact_form_wrap form .control textarea {
+    padding: 12px 15px;
+    font-size: 20px;
+  }
+  .contact .contact_form_wrap form .services .services_wrap {
+    grid-template-columns: 1fr;
+  }
+  .contact h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .contact .contact_form_wrap form .services h2 {
+    font-size: 28px;
+  }
+  .contact .contact_form_wrap form .budget h2 {
+    font-size: 25px;
+  }
+  .contact .contact_form_wrap form .budget h2 span {
+    font-size: 21px;
+  }
+  .news .news_main h1 {
+    font-size: 80px;
+  }
+  .news .news_main p {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  .news .news_card {
+    padding: 3rem 0;
+  }
+  .newsletter h1 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 50px;
+  }
+  .newsletter .control input {
+    font-size: 24px;
+    padding: 10px 0;
+  }
+  .newsletter .control button {
+    font-size: 23px;
+    padding: 10px 50px;
+  }
+  .career_section1 .section1_main_wrap .section1_main h1 {
+    font-size: 70px;
+  }
+  .career_section1 .section1_main_wrap .section1_main p {
+    font-size: 22px;
+  }
+  .career_section1 .section1_main_wrap .section1_main .section1_btn button {
+    font-size: 17px;
+  }
+  .section1_mob_wrap {
+    padding: 3rem 0 2rem 0;
+  }
+  .career_section2 h1 {
+    font-size: 51px;
+  }
+  .career_section2 h1 .ring .ring_img {
+    width: 140px;
+    height: auto;
+  }
+  .career_section3 .section3_card .section3_content h1 span::after {
+    bottom: 8%;
+    left: 15%;
+  }
+}
+
+@media (max-width: 350px) {
+  .career_section4 .search_cards .search_card {
+    width: 290px;
   }
 }

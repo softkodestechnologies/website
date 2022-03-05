@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect, useMemo, useRef } from "react";
 import Image from "next/image";
 const Section1 = () => {
+  const sectionRef = useRef(null);
+
+  const callbackFunction = (entries) => {
+    const [entry] = entries;
+  };
+
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0,
+  };
+  useEffect(() => {
+    if (!window) return;
+    const observer = new IntersectionObserver(callbackFunction);
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => {
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+    };
+  }, [sectionRef]);
   return (
     <>
-      <section className="section1">
+      <section className="section1" ref={sectionRef}>
         <div className="container">
           <div className="section1_wrap">
             <h1 data-aos="fade-down" data-aos-delay="300">

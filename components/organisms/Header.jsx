@@ -1,20 +1,44 @@
 import React from "react";
 import Image from "next/image";
+import { useGeneralContext } from "../../context/GeneralContext";
+import { useRouter } from "next/router";
 
-const Header = () => {
+const Header = ({ black }) => {
+  const router = useRouter();
+  const { navOpen, setNavOpen } = useGeneralContext();
   const openNav = () => {
-    if (!window) return;
-    let nav = document.querySelector(".nav");
-    console.log(nav);
-    nav.classList.add("nav_open");
+    setNavOpen(true);
   };
   return (
-    <header>
+    <header className={`${black && "head_black"}`}>
       <div className="container">
-        <div className="logo">
-          <Image src="/assets/title.svg" width={251} height={80} alt="title" />
+        <div className="logo" onClick={() => router.push("/")}>
+          <Image
+            src="/assets/title.svg"
+            priority
+            width={251}
+            height={80}
+            alt="title"
+          />
+        </div>
+        <div className="logo_aux" onClick={() => router.push("/")}>
+          <Image
+            src="/assets/title_aux.svg"
+            priority
+            width={251}
+            height={80}
+            alt="title"
+          />
         </div>
         <div className="bar_wrap">
+          <div className="bars_aux" onClick={openNav}>
+            <Image
+              src="/assets/bar_aux.svg"
+              width={39}
+              height={39}
+              alt="bars"
+            />
+          </div>
           <div className="bars" onClick={openNav}>
             <Image src="/assets/bars.svg" width={39} height={39} alt="bars" />
           </div>

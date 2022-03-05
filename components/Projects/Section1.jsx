@@ -24,6 +24,7 @@ const Section1 = () => {
             width={900}
             height={650}
             alt="Project"
+            priority
           />
         </div>
       </div>

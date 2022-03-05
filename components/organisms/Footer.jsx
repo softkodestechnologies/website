@@ -1,7 +1,9 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <footer>
       <div className="footer_wrap">
@@ -12,7 +14,7 @@ const Footer = () => {
             data-aos-delay="400"
             data-aos-duration="1300"
           >
-            <div className="image">
+            <div className="image" onClick={() => router.push("/")}>
               <Image
                 src="/assets/title.svg"
                 width={336}
@@ -31,11 +33,11 @@ const Footer = () => {
           >
             <h1>Quick Links</h1>
             <ul>
-              <li>Home</li>
-              <li>Get to know us</li>
-              <li>Culture</li>
-              <li>Our Works</li>
-              <li>Training</li>
+              <li onClick={() => router.push("/")}>Home</li>
+              <li onClick={() => router.push("/member")}>Get to know us</li>
+              <li onClick={() => router.push("/culture")}>Culture</li>
+              <li onClick={() => router.push("/projects")}>Our Works</li>
+              <li onClick={() => router.push("/training")}>Training</li>
             </ul>
           </div>
           <div
@@ -44,7 +46,7 @@ const Footer = () => {
             data-aos-delay="400"
             data-aos-duration="1300"
           >
-            <h1>Contact Us</h1>
+            <h1 onClick={() => router.push("/contact")}>Contact Us</h1>
             <ul>
               <li>Dribble</li>
               <li>Instagram</li>

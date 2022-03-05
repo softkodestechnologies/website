@@ -14,8 +14,8 @@ const Hero = () => {
             <div
               className="div_1"
               data-aos="fade-left"
-              data-aos-delay="300"
-              data-aos-duration="1000"
+              data-aos-delay="500"
+              data-aos-duration="1200"
             >
               <p>
                 Do you need your brand to look endearing on the web? need a user
@@ -26,8 +26,8 @@ const Hero = () => {
             <div
               className="div_2"
               data-aos="fade-right"
-              data-aos-delay="300"
-              data-aos-duration="1000"
+              data-aos-delay="500"
+              data-aos-duration="1200"
             >
               <div className="div_2_content">
                 <p>

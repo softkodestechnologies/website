@@ -7,6 +7,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import AOS from "aos";
 // import aos styles
 import "aos/dist/aos.css";
+import GeneralContextProvider from "../context/GeneralContext";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -29,11 +30,13 @@ function MyApp({ Component, pageProps }) {
   // }, [router]);
   return (
     <>
-      <ParallaxProvider>
-        <Nav />
-        <Component {...pageProps} />
-        <TopButton />
-      </ParallaxProvider>
+      <GeneralContextProvider>
+        <ParallaxProvider>
+          <Nav />
+          <Component {...pageProps} />
+          <TopButton />
+        </ParallaxProvider>
+      </GeneralContextProvider>
     </>
   );
 }

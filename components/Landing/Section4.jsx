@@ -13,7 +13,7 @@ const Section4 = () => {
               <h2>WEB DESIGN</h2>
             </Parallax>
             <div className="section4_img">
-              <Parallax rotate={[20, 0]}>
+              <Parallax rotate={[35, 0]}>
                 <div className="parallax_wrap parallax_wrap1">
                   <Image
                     src="/assets/image11.png"
@@ -31,7 +31,7 @@ const Section4 = () => {
               <h2>MOBILE DEVELOPMENT</h2>
             </Parallax>
             <div className="section4_img">
-              <Parallax rotate={[20, 0]}>
+              <Parallax rotate={[-35, 0]}>
                 <div className="parallax_wrap parallax_wrap2">
                   <Image
                     src="/assets/image11.png"
@@ -49,7 +49,7 @@ const Section4 = () => {
               <h2>GAME DEVELOPMENT</h2>
             </Parallax>
             <div className="section4_img">
-              <Parallax rotate={[20, 0]}>
+              <Parallax rotate={[35, 0]}>
                 <div className="parallax_wrap parallax_wrap3">
                   <Image
                     src="/assets/image12.png"
