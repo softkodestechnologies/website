@@ -7,7 +7,7 @@ export const useGeneralContext = () => useContext(GeneralContext);
 const GeneralContextProvider = ({ children }) => {
   const router = useRouter();
   const [navOpen, setNavOpen] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const handleRouteChange = (url) => {
       setNavOpen(false);
