@@ -9,7 +9,7 @@ import {
 } from "../components";
 
 let bgChange = false;
-const training = () => {
+const Training = () => {
   const ovrRef = useRef(null);
   useEffect(() => {
     if (!window) return;
@@ -69,4 +69,4 @@ const training = () => {
   );
 };
 
-export default training;
+export default Training;

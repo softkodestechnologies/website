@@ -9,7 +9,7 @@ import {
   TrainingSection3,
 } from "../components";
 
-const member = () => {
+const Member = () => {
   return (
     <div>
       <Head>
@@ -25,4 +25,4 @@ const member = () => {
   );
 };
 
-export default member;
+export default Member;

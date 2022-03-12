@@ -9,7 +9,7 @@ import {
 } from "../components";
 
 let bgChange = false;
-const projects = () => {
+const Projects = () => {
   const ovrRef = useRef(null);
   useEffect(() => {
     if (!window) return;
@@ -69,4 +69,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;
