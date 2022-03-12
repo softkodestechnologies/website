@@ -15,7 +15,7 @@ import { useWindowDimensions } from "../../hooks";
 const Section5 = () => {
   const slideNo = useWindowDimensions();
   return (
-    <section className="section5">
+    <section className="section5" id="bg-3">
       <h1>PROJECTS</h1>
       <div className="carousel_wrap">
         <CarouselProvider

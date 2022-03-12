@@ -1,54 +1,77 @@
-import React, { useEffect, useMemo, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
+
 const Section1 = () => {
-  const sectionRef = useRef(null);
-
-  const callbackFunction = (entries) => {
-    const [entry] = entries;
-  };
-
-  const options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 1.0,
-  };
+  const [card1Pos, setCard1Pos] = useState(-800);
+  const [card1Op, setCard1Op] = useState(1);
+  const [card2Op, setCard2Op] = useState(0);
+  const [card1Scale, setCard1Scale] = useState(1.3);
+  const [card2Pos, setCard2Pos] = useState(800);
   useEffect(() => {
     if (!window) return;
-    const observer = new IntersectionObserver(callbackFunction);
-    if (sectionRef.current) observer.observe(sectionRef.current);
+    window.addEventListener("scroll", checkOp);
     return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
+      window.removeEventListener("scroll", checkOp);
     };
-  }, [sectionRef]);
+  }, []);
+  const checkOp = () => {
+    if (window.scrollY * 5 - 800 < 0) {
+      setCard1Op(0 + window.scrollY * 0.0125);
+      setCard1Pos(window.scrollY * 5 - 800);
+      setCard2Pos(-window.scrollY * 5 + 800);
+      setCard1Scale(1.3 - window.scrollY * 0.0008);
+      if (window.scrollY * 5 - 800 > -400 || window.scrollY * 5 - 800 < -800) {
+        setCard2Op(1);
+      } else {
+        setCard2Op(0);
+      }
+    }
+  };
   return (
     <>
-      <section className="section1" ref={sectionRef}>
+      <section className="section1">
         <div className="container">
           <div className="section1_wrap">
-            <h1 data-aos="fade-down" data-aos-delay="300">
+            {/* <h1 data-aos="fade-down" data-aos-delay="300">
               WHAT WE DO
-            </h1>
+            </h1> */}
             <div className="section1_cards">
               <div
                 className="card"
-                data-aos="fade-up-right"
-                data-aos-delay="450"
+                // data-aos="fade-up-right"
+                // data-aos-delay="450"
+                style={{
+                  opacity: card1Op,
+                  transform: `scale(${card1Scale}) translateX(${card1Pos}px)`,
+                }}
               >
-                <Image
-                  src="/assets/image1.png"
-                  alt="test"
-                  width={342}
-                  height={534}
-                />
+                <div className="card_image">
+                  <Image
+                    src="/assets/image1.png"
+                    alt="test"
+                    width={342}
+                    height={534}
+                  />
+                </div>
               </div>
 
-              <div className="card" data-aos="fade-down" data-aos-delay="450">
-                <Image
-                  src="/assets/image2.png"
-                  alt="test"
-                  width={387}
-                  height={273}
-                />
+              <div
+                className="card"
+                style={{
+                  opacity: card2Op,
+                  transition: "0.1s all ease",
+                }}
+                data-aos="fade-down"
+                data-aos-delay="450"
+              >
+                <div className="card_image">
+                  <Image
+                    src="/assets/image2.png"
+                    alt="test"
+                    width={387}
+                    height={273}
+                  />
+                </div>
                 <div className="content">
                   <h3>Development</h3>
                   <p>
@@ -59,28 +82,37 @@ const Section1 = () => {
               </div>
               <div
                 className="card"
-                data-aos="fade-down-left"
-                data-aos-delay="450"
+                style={{
+                  opacity: card1Op,
+                  transform: `scale(${card1Scale}) translateX(${card2Pos}px)`,
+                }}
+                // data-aos="fade-down-left"
+                // data-aos-delay="450"
               >
-                <Image
-                  src="/assets/image3.png"
-                  alt="test"
-                  width={295}
-                  height={545}
-                />
+                <div className="card_image">
+                  <Image
+                    src="/assets/image3.png"
+                    alt="test"
+                    width={295}
+                    height={545}
+                  />
+                </div>
               </div>
 
               <div
                 className="card"
+                id="bg-1"
                 data-aos="zoom-out-right"
                 data-aos-delay="450"
               >
-                <Image
-                  src="/assets/image4.png"
-                  alt="test"
-                  width={317}
-                  height={507}
-                />
+                <div className="card_image">
+                  <Image
+                    src="/assets/image4.png"
+                    alt="test"
+                    width={317}
+                    height={507}
+                  />
+                </div>
                 <div className="content">
                   <h3>Design</h3>
                   <p>
@@ -96,12 +128,14 @@ const Section1 = () => {
                 data-aos="zoom-out-down"
                 data-aos-delay="450"
               >
-                <Image
-                  src="/assets/image5.png"
-                  alt="test"
-                  width={352}
-                  height={264}
-                />
+                <div className="card_image">
+                  <Image
+                    src="/assets/image5.png"
+                    alt="test"
+                    width={352}
+                    height={264}
+                  />
+                </div>
                 <div className="content">
                   <h3>Development</h3>
                   <p>
@@ -116,12 +150,14 @@ const Section1 = () => {
                 data-aos="zoom-out-left"
                 data-aos-delay="450"
               >
-                <Image
-                  src="/assets/image6.png"
-                  alt="test"
-                  width={324}
-                  height={506}
-                />
+                <div className="card_image">
+                  <Image
+                    src="/assets/image6.png"
+                    alt="test"
+                    width={324}
+                    height={506}
+                  />
+                </div>
                 <div className="content">
                   <h3>Training</h3>
                   <p>

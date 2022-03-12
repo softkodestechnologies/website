@@ -52,7 +52,7 @@ const Nav = () => {
                   <li onClick={() => move("/training")}>
                     <span>02.</span>Training
                   </li>
-                  <li onClick={() => move("/")}>
+                  <li onClick={() => move("/culture")}>
                     <span>03.</span>Culture
                   </li>
                   <li onClick={() => move("/career")}>

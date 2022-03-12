@@ -3,7 +3,7 @@ import React from "react";
 
 const Section3 = () => {
   return (
-    <section className="project3">
+    <section className="project3 pr1">
       <div className="container">
         <h1>Web Applications</h1>
         <div className="project3_cards">

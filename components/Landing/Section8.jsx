@@ -22,7 +22,7 @@ const Section8 = () => {
   };
 
   return (
-    <section className="section8">
+    <section className="section8" id="bg-4">
       <div className="container">
         <h1 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1300">
           Have a project in mind? Get in touch with us today

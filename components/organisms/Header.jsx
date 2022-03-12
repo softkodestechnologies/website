@@ -16,8 +16,8 @@ const Header = ({ black }) => {
           <Image
             src="/assets/title.svg"
             priority
-            width={251}
-            height={80}
+            width={181}
+            height={50}
             alt="title"
           />
         </div>
@@ -40,7 +40,7 @@ const Header = ({ black }) => {
             />
           </div>
           <div className="bars" onClick={openNav}>
-            <Image src="/assets/bars.svg" width={39} height={39} alt="bars" />
+            <Image src="/assets/bars.svg" width={29} height={29} alt="bars" />
           </div>
           <h1>Menu</h1>
         </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 const Section2 = () => {
   return (
-    <section className="career_section2">
+    <section className="career_section2 cu1">
       <h1>
         Our{" "}
         <div className="ring">

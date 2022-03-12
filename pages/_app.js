@@ -8,6 +8,13 @@ import AOS from "aos";
 // import aos styles
 import "aos/dist/aos.css";
 import GeneralContextProvider from "../context/GeneralContext";
+import "../node_modules/locomotive-scroll/src/locomotive-scroll.scss";
+import dynamic from "next/dynamic";
+
+const ScrollContainer = dynamic(
+  () => import("react-scroll-motion").then((mod) => mod.ScrollContainer),
+  { ssr: false }
+);
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -31,11 +38,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <GeneralContextProvider>
-        <ParallaxProvider>
-          <Nav />
-          <Component {...pageProps} />
-          <TopButton />
-        </ParallaxProvider>
+        <ScrollContainer>
+          <ParallaxProvider>
+            <Nav />
+            <Component {...pageProps} />
+            <TopButton />
+          </ParallaxProvider>
+        </ScrollContainer>
       </GeneralContextProvider>
     </>
   );

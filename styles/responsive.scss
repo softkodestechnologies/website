@@ -51,6 +51,9 @@
   .career_section4 .search_wrap h1 {
     margin-right: 1rem;
   }
+  .culture-page {
+    width: 18000px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -132,6 +135,22 @@
     margin-left: 3rem;
     width: 340px;
     height: auto;
+  }
+  .culture-page .hor-footer .footer_wrap .top .left h3 {
+    font-size: 24px;
+  }
+  .culture-page .hor-footer .footer_wrap .top .left p {
+    font-size: 24px;
+  }
+  .culture-page .hor-footer .footer_wrap .top .center li,
+  .culture-page .hor-footer .footer_wrap .top .right li {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .culture-page {
+    width: 17500px;
   }
 }
 
@@ -375,7 +394,7 @@
   }
   .career_section3 .section3_card .section3_content h1::after {
     width: 300px;
-    bottom: -14%;
+    bottom: -20%;
   }
   .career_section3 .section3_card .section3_content p {
     font-size: 24px;
@@ -392,13 +411,21 @@
   .container {
     padding: 0 20px;
   }
-  header .container .bar_wrap h1 {
+  header .container .bar_wrap h1,
+  .head_black .container .bar_wrap h1 {
     font-size: 18px;
   }
   header .logo {
     width: 102px;
   }
-  header .bars {
+  .head_black {
+    padding: 22px 0;
+  }
+  .head_black .logo_aux {
+    width: 102px;
+  }
+  header .container .bar_wrap .bars_aux,
+  .head_black .container .bar_wrap .bars_aux {
     width: 25px;
   }
   .landing_hero .hero_bread {
@@ -733,8 +760,8 @@
     margin-left: 4rem;
   }
   .career_section3 {
-    background-color: #000;
-    color: #fff;
+    // background-color: #000;
+    // color: #fff;
   }
   .career_section3 .section3_svg {
     display: none;

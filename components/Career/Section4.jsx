@@ -4,7 +4,7 @@ import { rolesData } from "../../Utils/data";
 
 const Section4 = () => {
   return (
-    <section className="career_section4">
+    <section className="career_section4 cu2">
       <div className="container">
         <div className="search_wrap">
           <h1>Like the way we see the world? Join Us.</h1>

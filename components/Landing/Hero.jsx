@@ -1,8 +1,23 @@
-import React from "react";
-
+import React, { useEffect, useRef, useState } from "react";
 const Hero = () => {
+  const [currOp, setCurrOp] = useState(1);
+  const [currSc, setCurrSc] = useState(1);
+  useEffect(() => {
+    if (!window) return;
+    window.addEventListener("scroll", checkOp);
+    return () => {
+      window.removeEventListener("scroll", checkOp);
+    };
+  }, []);
+  const checkOp = () => {
+    setCurrOp(1 - window.scrollY * 0.0125);
+    setCurrSc(1 - window.scrollY * 0.00125);
+  };
   return (
-    <section className="landing_hero">
+    <section
+      className="landing_hero"
+      style={{ opacity: currOp, transform: `scale(${currSc})` }}
+    >
       <div className="container">
         <div className="hero_bread">
           <li>Development</li>

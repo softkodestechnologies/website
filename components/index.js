@@ -8,3 +8,4 @@ export * from "./Contact";
 export * from "./News";
 export * from "./Newsletter";
 export * from "./Career";
+export * from "./Culture";

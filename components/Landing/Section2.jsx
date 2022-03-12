@@ -41,7 +41,7 @@ const Section2 = () => {
         </div>
       </div>
 
-      <div className="part2">
+      <div className="part2" id="bg-2">
         <div className="container">
           <div
             className="image"

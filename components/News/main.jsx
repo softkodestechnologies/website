@@ -66,7 +66,7 @@ const main = () => {
         </div>
       </div>
 
-      <div className="news_card">
+      <div className="news_card nw1">
         <div className="container">
           <div
             className="news_img"

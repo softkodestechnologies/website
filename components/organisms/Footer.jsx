@@ -66,7 +66,7 @@ const Footer = () => {
           <div className="copy">Copyright Softkode all rights reserved.</div>
           <div className="list">
             <p>Terms Condition </p>
-            <p>Privacy Policy</p>
+            <p onClick={() => router.push("/privacy")}>Privacy Policy</p>
             <p>FAQ</p>
           </div>
         </div>
