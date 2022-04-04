@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import GeneralContextProvider from "../context/GeneralContext";
 import "../node_modules/locomotive-scroll/src/locomotive-scroll.scss";
 import dynamic from "next/dynamic";
+import { Cursor } from "../components/atoms";
 
 const ScrollContainer = dynamic(
   () => import("react-scroll-motion").then((mod) => mod.ScrollContainer),
@@ -25,22 +26,13 @@ function MyApp({ Component, pageProps }) {
     });
   }, []);
 
-  // useEffect(() => {
-  //   const handleStart = (url) => {
-  //     url !== router.pathname ? setLoading(true) : setLoading(false);
-  //   };
-  //   const handleComplete = (url) => setLoading(false);
-
-  //   router.events.on("routeChangeStart", handleStart);
-  //   router.events.on("routeChangeComplete", handleComplete);
-  //   router.events.on("routeChangeError", handleComplete);
-  // }, [router]);
   return (
     <>
       <GeneralContextProvider>
         <ScrollContainer>
           <ParallaxProvider>
             <Nav />
+            <Cursor />
             <Component {...pageProps} />
             <TopButton />
           </ParallaxProvider>

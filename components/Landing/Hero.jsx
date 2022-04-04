@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+
 const Hero = () => {
   const [currOp, setCurrOp] = useState(1);
   const [currSc, setCurrSc] = useState(1);
@@ -16,7 +17,11 @@ const Hero = () => {
   return (
     <section
       className="landing_hero"
-      style={{ opacity: currOp, transform: `scale(${currSc})` }}
+      style={
+        window.innerWidth > 768
+          ? { opacity: currOp, transform: `scale(${currSc})` }
+          : {}
+      }
     >
       <div className="container">
         <div className="hero_bread">

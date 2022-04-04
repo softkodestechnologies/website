@@ -14,7 +14,7 @@ const Header = ({ black }) => {
       <div className="container">
         <div className="logo" onClick={() => router.push("/")}>
           <Image
-            src="/assets/title.svg"
+            src="/assets/title_small.svg"
             priority
             width={181}
             height={50}
@@ -42,7 +42,7 @@ const Header = ({ black }) => {
           <div className="bars" onClick={openNav}>
             <Image src="/assets/bars.svg" width={29} height={29} alt="bars" />
           </div>
-          <h1>Menu</h1>
+          {/* <h1>Menu</h1> */}
         </div>
       </div>
     </header>

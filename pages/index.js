@@ -32,13 +32,13 @@ export default function Home() {
   // const [bgChange, setBgChange] = useState(false);
   useEffect(() => {
     if (loading === true) {
-      let clock = setInterval(() => {
-        setPercent(percent++);
-        if (percent > 100) {
-          setLoading(false);
-          clearInterval(clock);
-        }
-      }, 50);
+      // let clock = setInterval(() => {
+      //   setPercent(percent++);
+      //   if (percent > 100) {
+      //     setLoading(false);
+      //     clearInterval(clock);
+      //   }
+      // }, 50);
     }
   }, []);
   useEffect(() => {
@@ -48,7 +48,6 @@ export default function Home() {
       window.removeEventListener("scroll", checkBg);
     };
   }, []);
-
 
   const checkBg = (e) => {
     const bg1 = document.getElementById("bg-1");
@@ -91,10 +90,18 @@ export default function Home() {
   const changeBg = () => {
     ovrRef.current.style.background = "#000";
     ovrRef.current.style.color = "#fff";
+    const textId = document.querySelectorAll(".cont_blur");
+    [...textId].map((item) => {
+      item.style.color = "rgba(255, 255, 255, 0.6)";
+    });
   };
   const reverseBg = () => {
     ovrRef.current.style.background = "#fff";
     ovrRef.current.style.color = "#000";
+    const textId = document.querySelectorAll(".cont_blur");
+    [...textId].map((item) => {
+      item.style.color = "#000";
+    });
   };
 
   const percentageSeen = (el) => {

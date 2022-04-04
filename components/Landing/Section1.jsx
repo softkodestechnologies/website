@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 const Section1 = () => {
@@ -19,7 +19,7 @@ const Section1 = () => {
       setCard1Op(0 + window.scrollY * 0.0125);
       setCard1Pos(window.scrollY * 5 - 800);
       setCard2Pos(-window.scrollY * 5 + 800);
-      setCard1Scale(1.3 - window.scrollY * 0.0008);
+      setCard1Scale(1.1 - window.scrollY * 0.0008);
       if (window.scrollY * 5 - 800 > -400 || window.scrollY * 5 - 800 < -800) {
         setCard2Op(1);
       } else {
@@ -47,10 +47,10 @@ const Section1 = () => {
               >
                 <div className="card_image">
                   <Image
-                    src="/assets/image1.png"
+                    src="/assets/image39.png"
                     alt="test"
-                    width={342}
-                    height={534}
+                    width={343}
+                    height={455}
                   />
                 </div>
               </div>
@@ -66,13 +66,13 @@ const Section1 = () => {
               >
                 <div className="card_image">
                   <Image
-                    src="/assets/image2.png"
+                    src="/assets/image38.png"
                     alt="test"
-                    width={387}
-                    height={273}
+                    width={343}
+                    height={455}
                   />
                 </div>
-                <div className="content">
+                <div className="content cont_blur">
                   <h3>Development</h3>
                   <p>
                     We specialise in Web development, android development, IOS
@@ -93,8 +93,8 @@ const Section1 = () => {
                   <Image
                     src="/assets/image3.png"
                     alt="test"
-                    width={295}
-                    height={545}
+                    width={343}
+                    height={455}
                   />
                 </div>
               </div>
@@ -109,11 +109,11 @@ const Section1 = () => {
                   <Image
                     src="/assets/image4.png"
                     alt="test"
-                    width={317}
-                    height={507}
+                    width={343}
+                    height={455}
                   />
                 </div>
-                <div className="content">
+                <div className="content cont_blur">
                   <h3>Design</h3>
                   <p>
                     We provide dhesign services ranging from Animation,
@@ -130,13 +130,13 @@ const Section1 = () => {
               >
                 <div className="card_image">
                   <Image
-                    src="/assets/image5.png"
+                    src="/assets/image6.png"
                     alt="test"
-                    width={352}
-                    height={264}
+                    width={343}
+                    height={455}
                   />
                 </div>
-                <div className="content">
+                <div className="content cont_blur">
                   <h3>Development</h3>
                   <p>
                     Our designs are tailored to be functional, aesthetically
@@ -152,13 +152,13 @@ const Section1 = () => {
               >
                 <div className="card_image">
                   <Image
-                    src="/assets/image6.png"
+                    src="/assets/image_37.png"
                     alt="test"
-                    width={324}
-                    height={506}
+                    width={343}
+                    height={455}
                   />
                 </div>
-                <div className="content">
+                <div className="content cont_blur">
                   <h3>Training</h3>
                   <p>
                     We offer intensive and thorough training on Ui/Ux Design,
@@ -192,7 +192,7 @@ const Section1 = () => {
             </div>
             <div className="mobile_pt1_wrap">
               <div
-                className="content"
+                className="content "
                 data-aos="fade-right"
                 data-aos-delay="400"
               >
@@ -232,7 +232,7 @@ const Section1 = () => {
           <div className="mobile_pt2">
             <div className="mobile_pt2_wrap">
               <div
-                className="content"
+                className="content "
                 data-aos="fade-right"
                 data-aos-delay="400"
               >
@@ -298,7 +298,7 @@ const Section1 = () => {
                 data-aos-delay="400"
               >
                 <div className="fake"></div>
-                <div className="content_wrap">
+                <div className="content_wrap ">
                   <h2>Design</h2>
                   <p>
                     We provide dhesign services ranging from Animation,

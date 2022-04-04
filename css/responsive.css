@@ -1,9 +1,11 @@
 @media (max-width: 1250px) {
   .section3 .section3_card::before {
-    transform: rotate(-90deg) translateX(-110%) translateY(120%);
+    -webkit-transform: rotate(-90deg) translateX(-110%) translateY(120%);
+            transform: rotate(-90deg) translateX(-110%) translateY(120%);
   }
   .section3 .section3_card::after {
-    transform: rotate(-90deg) translateX(-5%) translateY(-5%);
+    -webkit-transform: rotate(-90deg) translateX(-5%) translateY(-5%);
+            transform: rotate(-90deg) translateX(-5%) translateY(-5%);
   }
   .section1_aux_img2 {
     width: 200px;
@@ -14,31 +16,31 @@
     height: auto;
   }
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content1
-    .letter
-    h2,
+.section2_card_mul
+.section2_content
+.section2_content1
+.letter
+h2,
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content2
-    .letter
-    h2 {
+.section2_card_mul
+.section2_content
+.section2_content2
+.letter
+h2 {
     font-size: 50px;
   }
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content1
-    .letter
-    .no,
+.section2_card_mul
+.section2_content
+.section2_content1
+.letter
+.no,
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content2
-    .letter
-    .no {
+.section2_card_mul
+.section2_content
+.section2_content2
+.letter
+.no {
     font-size: 50px;
   }
   .section2_cards .section2_card_mul .section2_content .section2_content1 p,
@@ -46,7 +48,8 @@
     font-size: 24px;
   }
   .career_section4 .search_cards {
-    column-gap: 30px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
   }
   .career_section4 .search_wrap h1 {
     margin-right: 1rem;
@@ -70,11 +73,13 @@
     font-size: 24px;
   }
   .section3 .section3_card::before {
-    transform: rotate(-90deg) translateX(-120%) translateY(90%);
+    -webkit-transform: rotate(-90deg) translateX(-120%) translateY(90%);
+            transform: rotate(-90deg) translateX(-120%) translateY(90%);
     font-size: 126px;
   }
   .section3 .section3_card::after {
-    transform: rotate(-90deg) translateX(-20%) translateY(15%);
+    -webkit-transform: rotate(-90deg) translateX(-20%) translateY(15%);
+            transform: rotate(-90deg) translateX(-20%) translateY(15%);
     font-size: 126px;
   }
   .section6 .section6_cards .section6_card .content {
@@ -116,10 +121,13 @@
   }
   .training2 .training2_cards,
   .training3 .training3_cards {
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .career_section1 .section1_main_wrap .section1_main {
-    flex: 6;
+    -webkit-box-flex: 6;
+        -ms-flex: 6;
+            flex: 6;
   }
   .section2_cards .section2_card .section2_content .letter h2 {
     font-size: 50px;
@@ -131,7 +139,9 @@
     font-size: 24px;
   }
   .section2_cards .section2_card .section2_img {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     margin-left: 3rem;
     width: 340px;
     height: auto;
@@ -162,37 +172,34 @@
   .section2_cards .section2_card_mul .section2_img .section2_img2 {
     width: 320px;
     height: auto;
-    transform: translateX(100px) translateY(-100px);
+    -webkit-transform: translateX(100px) translateY(-100px);
+            transform: translateX(100px) translateY(-100px);
   }
   .career_section4 .search_cards {
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    column-gap: 30px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
   }
 }
 
 @media (max-width: 1024px) {
-  .nav_img_wrap {
-    display: none;
-  }
-  .nav .nav_con .nav_body {
-    gap: initial;
-  }
   .head_black {
     background-color: #000;
     color: #fff;
-    .logo {
-      display: none;
-    }
-    .logo_aux {
-      display: block;
-    }
-    .bars {
-      display: none;
-    }
-    .bars_aux {
-      display: block !important;
-    }
+  }
+  .head_black .logo {
+    display: none;
+  }
+  .head_black .logo_aux {
+    display: block;
+  }
+  .head_black .bars {
+    display: none;
+  }
+  .head_black .bars_aux {
+    display: block !important;
   }
   .container {
     padding: 0 44px;
@@ -204,11 +211,13 @@
     margin-left: 6rem;
   }
   .section3 .section3_card::before {
-    transform: rotate(-90deg) translateX(-128%) translateY(100%);
+    -webkit-transform: rotate(-90deg) translateX(-128%) translateY(100%);
+            transform: rotate(-90deg) translateX(-128%) translateY(100%);
     font-size: 88px;
   }
   .section3 .section3_card::after {
-    transform: rotate(-90deg) translateX(-40%) translateY(5%);
+    -webkit-transform: rotate(-90deg) translateX(-40%) translateY(5%);
+            transform: rotate(-90deg) translateX(-40%) translateY(5%);
     font-size: 88px;
   }
   .section3 .section3_card {
@@ -225,13 +234,19 @@
     font-size: 80px;
   }
   .section6 .section6_cards .section6_card {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 500px;
     margin: auto;
   }
   .section6 .section6_cards .section6_card:nth-child(2) {
     margin-top: 10.5rem;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .section6 .section6_cards .section6_card .image .btn {
     display: none;
@@ -247,6 +262,9 @@
   }
   .loading_right h1 {
     font-size: 30px;
+  }
+  .loading_centre {
+    min-width: 250px;
   }
   .loading_centre_wrap h1 {
     padding: 40px 35px;
@@ -277,24 +295,24 @@
     font-size: 120px;
   }
   .contact
-    .contact_form_wrap
-    form
-    .services
-    .services_wrap
-    .check_control
-    label {
+.contact_form_wrap
+form
+.services
+.services_wrap
+.check_control
+label {
     font-size: 33px;
   }
   .contact .contact_form_wrap form .budget h2 {
     font-size: 35px;
   }
   .contact
-    .contact_form_wrap
-    form
-    .services
-    .services_wrap
-    .check_control
-    input {
+.contact_form_wrap
+form
+.services
+.services_wrap
+.check_control
+input {
     width: 50px;
     height: 50px;
   }
@@ -330,17 +348,24 @@
     text-align: left;
   }
   .career_section1 .section1_main_wrap .section1_main .section1_btn button {
-    background: rgba(28, 27, 27, 1);
+    background: #1c1b1b;
     color: #fff;
   }
   .section1_mob_wrap {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
     padding: 7rem 0 2rem 0;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section1_mob_wrap .section1_aux_img3 {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   .section1_aux_img1,
   .section1_aux_img2,
@@ -348,31 +373,31 @@
     margin-right: 2rem;
   }
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content1
-    .letter
-    h2,
+.section2_card_mul
+.section2_content
+.section2_content1
+.letter
+h2,
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content2
-    .letter
-    h2 {
+.section2_card_mul
+.section2_content
+.section2_content2
+.letter
+h2 {
     font-size: 35px;
   }
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content1
-    .letter
-    .no,
+.section2_card_mul
+.section2_content
+.section2_content1
+.letter
+.no,
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content2
-    .letter
-    .no {
+.section2_card_mul
+.section2_content
+.section2_content2
+.letter
+.no {
     font-size: 35px;
   }
   .section2_cards .section2_card_mul .section2_content .section2_content1 p,
@@ -386,7 +411,8 @@
   .section2_cards .section2_card_mul .section2_img .section2_img2 {
     width: 280px;
     height: auto;
-    transform: translateX(100px) translateY(-100px);
+    -webkit-transform: translateX(100px) translateY(-100px);
+            transform: translateX(100px) translateY(-100px);
   }
   .career_section3 .section3_card .section3_content h1::after {
     left: 0px;
@@ -430,9 +456,6 @@
   header .container .bar_wrap .bars_aux,
   .head_black .container .bar_wrap .bars_aux {
     width: 25px;
-  }
-  .landing_hero {
-    position: static;
   }
   .landing_hero .hero_bread {
     left: -150px;
@@ -501,11 +524,13 @@
     margin-left: 2rem;
   }
   .section3 .section3_card::before {
-    transform: rotate(-90deg) translateX(-138%) translateY(90%);
+    -webkit-transform: rotate(-90deg) translateX(-138%) translateY(90%);
+            transform: rotate(-90deg) translateX(-138%) translateY(90%);
     font-size: 50px;
   }
   .section3 .section3_card::after {
-    transform: rotate(-90deg) translateX(-80%) translateY(-25%);
+    -webkit-transform: rotate(-90deg) translateX(-80%) translateY(-25%);
+            transform: rotate(-90deg) translateX(-80%) translateY(-25%);
     font-size: 50px;
   }
   .section3 .section3_card {
@@ -544,7 +569,6 @@
   footer .footer_wrap .top .right {
     margin-top: 6rem;
   }
-
   footer .footer_wrap .top .left p {
     font-size: 12px;
   }
@@ -573,33 +597,33 @@
   footer .footer_wrap .top {
     gap: 30px;
   }
-  .nav_con {
-    padding: 20px 50px;
+  .nav {
+    padding: 40px 50px;
   }
   .nav .nav_con .nav_body {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .nav .nav_con .nav_body .nav_links1 ul li {
-    font-size: 30px;
-    margin-bottom: 0.2rem;
-  }
-  .nav .nav_con .nav_header {
-    margin-bottom: 0rem;
+    font-size: 35px;
   }
   .nav .nav_con .nav_body .nav_links1 ul li span {
     min-width: 25px;
     font-size: 20px;
   }
   .nav .nav_con .nav_body .nav_links2 ul h1 {
-    font-size: 35px;
+    font-size: 40px;
     margin-left: 25px;
   }
   .nav .nav_con .nav_body .nav_links2 ul li {
-    font-size: 22px;
+    font-size: 28px;
     margin-left: 25px;
   }
   .nav .nav_con .nav_body .nav_links2 {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   .nav .nav_con .nav_footer p {
     margin-left: 0;
@@ -621,17 +645,23 @@
     text-align: left;
   }
   .project2 .project2_cards {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     row-gap: 5rem;
   }
   .project3 .project3_cards .project3_card {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
     margin-bottom: 3rem;
   }
   .project3 .project3_cards .project3_card:nth-child(even) .project3_img {
-    order: unset;
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
   }
   .project3 .project3_cards .project3_card:nth-child(odd) .project3_content p {
     text-align: left;
@@ -654,7 +684,8 @@
   }
   .training2 .training2_cards,
   .training3 .training3_cards {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   .training2 h1,
   .training3 h1 {
@@ -689,19 +720,17 @@
   .member .member_form_wrap .two_btns button {
     margin: 0rem 0.8rem 0 0.8rem;
   }
-
   .contact h1 {
     font-size: 65px;
     line-height: 100px;
   }
-
   .contact
-    .contact_form_wrap
-    form
-    .services
-    .services_wrap
-    .check_control
-    label {
+.contact_form_wrap
+form
+.services
+.services_wrap
+.check_control
+label {
     font-size: 25px;
   }
   .contact .contact_form_wrap form .budget .budget_wrap .budget_btn {
@@ -714,7 +743,10 @@
     font-size: 30px;
   }
   .section2_cards .section2_card {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .section2_cards .section2_card .section2_img {
     margin-top: 3rem;
@@ -734,31 +766,31 @@
     display: none;
   }
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content1
-    .letter
-    h2,
+.section2_card_mul
+.section2_content
+.section2_content1
+.letter
+h2,
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content2
-    .letter
-    h2 {
+.section2_card_mul
+.section2_content
+.section2_content2
+.letter
+h2 {
     font-size: 50px;
   }
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content1
-    .letter
-    .no,
+.section2_card_mul
+.section2_content
+.section2_content1
+.letter
+.no,
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content2
-    .letter
-    .no {
+.section2_card_mul
+.section2_content
+.section2_content2
+.letter
+.no {
     font-size: 50px;
   }
   .section2_cards .section2_card_mul .section2_content .section2_content1 p,
@@ -769,10 +801,6 @@
   .section2_cards .section2_card_mul .section2_content .section2_content2 p {
     margin-left: 4rem;
   }
-  .career_section3 {
-    // background-color: #000;
-    // color: #fff;
-  }
   .career_section3 .section3_svg {
     display: none;
   }
@@ -780,7 +808,10 @@
     display: block;
   }
   .career_section3 .section3_card {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .career_section3 .section3_card .section3_content p {
     text-align: center;
@@ -792,12 +823,10 @@
   .career_section3 .section3_card .section3_content h1::after {
     display: none;
   }
-
   .career_section3 .section3_card .section3_content h1 span::after {
     position: absolute;
     bottom: 8%;
     left: 25%;
-    // transform: translateX(35px);
     width: 137px;
     height: 11.9px;
     content: "";
@@ -807,17 +836,20 @@
     background-size: cover;
   }
   .career_section4 .search_cards {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 580px) {
   .section3 .section3_card::before {
-    transform: rotate(-90deg) translateX(-138%) translateY(80%);
+    -webkit-transform: rotate(-90deg) translateX(-138%) translateY(80%);
+            transform: rotate(-90deg) translateX(-138%) translateY(80%);
     font-size: 50px;
   }
   .section3 .section3_card::after {
-    transform: rotate(-90deg) translateX(-80%) translateY(-10%);
+    -webkit-transform: rotate(-90deg) translateX(-80%) translateY(-10%);
+            transform: rotate(-90deg) translateX(-80%) translateY(-10%);
     font-size: 50px;
   }
   .section3 .section3_card {
@@ -841,7 +873,6 @@
     font-size: 50px;
     margin-bottom: 80px;
   }
-
   footer .footer_wrap .top .left p {
     font-size: 8px;
   }
@@ -871,7 +902,8 @@
   }
   footer .footer_wrap .top .center li::after,
   footer .footer_wrap .top .right li::after {
-    transform: translateX(-15px) translateY(-50%);
+    -webkit-transform: translateX(-15px) translateY(-50%);
+            transform: translateX(-15px) translateY(-50%);
     width: 10px;
   }
   .section8 .section8_btn button {
@@ -888,8 +920,8 @@
     font-size: 20px;
   }
   .loading_centre {
-    width: 250px;
-    height: 250px;
+    min-width: 100px;
+    padding: 10px;
   }
   .loading_centre_wrap h1 {
     padding: 30px 25px;
@@ -903,7 +935,7 @@
     width: 160px;
   }
   .nav {
-    padding: 30px 20px;
+    padding: 40px 20px;
   }
   .project1 h1 {
     font-size: 60px;
@@ -926,21 +958,21 @@
     font-size: 35px;
   }
   .contact
-    .contact_form_wrap
-    form
-    .services
-    .services_wrap
-    .check_control
-    label {
+.contact_form_wrap
+form
+.services
+.services_wrap
+.check_control
+label {
     font-size: 20px;
   }
   .contact
-    .contact_form_wrap
-    form
-    .services
-    .services_wrap
-    .check_control
-    input {
+.contact_form_wrap
+form
+.services
+.services_wrap
+.check_control
+input {
     width: 30px;
     height: 30px;
   }
@@ -994,31 +1026,31 @@
     height: auto;
   }
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content1
-    .letter
-    h2,
+.section2_card_mul
+.section2_content
+.section2_content1
+.letter
+h2,
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content2
-    .letter
-    h2 {
+.section2_card_mul
+.section2_content
+.section2_content2
+.letter
+h2 {
     font-size: 28px;
   }
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content1
-    .letter
-    .no,
+.section2_card_mul
+.section2_content
+.section2_content1
+.letter
+.no,
   .section2_cards
-    .section2_card_mul
-    .section2_content
-    .section2_content2
-    .letter
-    .no {
+.section2_card_mul
+.section2_content
+.section2_content2
+.letter
+.no {
     font-size: 28px;
   }
   .section2_cards .section2_card_mul .section2_content .section2_content1 p,
@@ -1044,7 +1076,9 @@
     top: 35%;
   }
   .section1_mobile .mobile_pt1 .mobile_pt1_wrap .image_wrap {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 20px;
   }
   .section1_mobile .mobile_pt1 .mobile_pt1_wrap .content {
@@ -1057,7 +1091,10 @@
     padding: 5rem 2rem;
   }
   .section2 .part2 .part2_prime {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .section2 .part2 .part2_prime .dir {
     margin-left: 0rem;
@@ -1071,11 +1108,13 @@
     padding: 0;
   }
   .section3 .section3_card::before {
-    transform: rotate(-90deg) translateX(-118%) translateY(70%);
+    -webkit-transform: rotate(-90deg) translateX(-118%) translateY(70%);
+            transform: rotate(-90deg) translateX(-118%) translateY(70%);
     font-size: 45px;
   }
   .section3 .section3_card::after {
-    transform: rotate(-90deg) translateX(-65%) translateY(-0%);
+    -webkit-transform: rotate(-90deg) translateX(-65%) translateY(0%);
+            transform: rotate(-90deg) translateX(-65%) translateY(0%);
     font-size: 45px;
   }
   .section3 .section3_card {
@@ -1217,7 +1256,8 @@
     font-size: 20px;
   }
   .contact .contact_form_wrap form .services .services_wrap {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   .contact h1 {
     font-size: 50px;

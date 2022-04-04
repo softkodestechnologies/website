@@ -16,7 +16,7 @@ const Footer = () => {
           >
             <div className="image" onClick={() => router.push("/")}>
               <Image
-                src="/assets/title.svg"
+                src="/assets/title_small.svg"
                 width={336}
                 height={109}
                 alt="title"

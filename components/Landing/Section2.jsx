@@ -35,7 +35,7 @@ const Section2 = () => {
               alt="image"
               width={481}
               height={687}
-              src="/assets/image7.png"
+              src="/assets/image40.png"
             />
           </div>
         </div>

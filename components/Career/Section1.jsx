@@ -20,7 +20,7 @@ const Section1 = () => {
           data-aos-delay="400"
           data-aos-duration="1400"
         >
-          <h1>
+          <h1 className="cur_hov">
             Join{" "}
             <div className="us">
               <span>Us.</span>

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^2.0.3",
+    "@ramonak/react-progress-bar": "^4.4.0",
     "aos": "^2.3.4",
     "framer-motion": "^6.2.8",
     "locomotive-scroll": "^4.1.4",
