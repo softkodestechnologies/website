@@ -32,13 +32,13 @@ export default function Home() {
   // const [bgChange, setBgChange] = useState(false);
   useEffect(() => {
     if (loading === true) {
-      // let clock = setInterval(() => {
-      //   setPercent(percent++);
-      //   if (percent > 100) {
-      //     setLoading(false);
-      //     clearInterval(clock);
-      //   }
-      // }, 50);
+      let clock = setInterval(() => {
+        setPercent(percent++);
+        if (percent > 100) {
+          setLoading(false);
+          clearInterval(clock);
+        }
+      }, 50);
     }
   }, []);
   useEffect(() => {
