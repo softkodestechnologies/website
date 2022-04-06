@@ -54,7 +54,7 @@ const Section2 = () => {
               alt="image"
               width={482}
               height={668}
-              src="/assets/image8.png"
+              src="/assets/image7.png"
             />
           </div>
           <div className="part2_prime">
@@ -74,9 +74,14 @@ const Section2 = () => {
                 Code Quickly with us.
               </h2>
               <h3 data-aos="fade-left" data-aos-delay="300">
-                With us, you don’t have a problem with urgency. Our pace though
-                swift, will provide you with the best possible results. We are
-                committed to providing amazing products in a timely manner.
+                <span>With us, you don’t have a problem with urgency.</span> Our
+                pace though swift, will provide you with the best possible
+                results.{" "}
+                <span>
+                  {" "}
+                  We are committed to providing amazing products in a timely
+                  manner.
+                </span>
               </h3>
             </div>
           </div>

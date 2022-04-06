@@ -214,8 +214,6 @@ const Nav = () => {
               <div className="nav_links2">
                 <ul>
                   <h1>More</h1>
-                  <li>News</li>
-                  <li>Behance</li>
                   <li>Twitter</li>
                   <li>Instagram</li>
                   <li>Facebook</li>

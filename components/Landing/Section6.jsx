@@ -14,13 +14,23 @@ const Section6 = () => {
               data-aos-delay="400"
               data-aos-duration="1300"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
-              pellentesque vel ac consectetur ac vel tristique. A in urna, quis
-              integer tincidunt viverra ornare. Ac cursus a auctor ut neque
-              pharetra. Non pellentesque id sagittis sagittis, nullam elit lorem
-              luctus lectus. ElementuLorem ipsum dolor sit amet, consectetur
-              adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Amet, laoreet nunc lacus turpis vulputate.
+              Lorem ipsum dolor{" "}
+              <span>
+                {" "}
+                sit amet, consectetur adipiscing elit. Tincidunt pellentesque
+                vel ac consectetur ac vel tristique. A in urna, quis integer
+                tincidunt viverra ornare. Ac cursus a auctor ut neque pharetra.
+                Non pellentesque id sagittis sagittis, nullam elit lorem luctus
+                lectus. Elementu{" "}
+              </span>{" "}
+              Lorem ipsum{" "}
+              <span>
+                {" "}
+                dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Amet, laoreet nunc lacus
+                turpis vulputate...{" "}
+              </span>{" "}
+              <a href="#">Read More</a>
             </div>
             <div
               className="image"
@@ -34,9 +44,9 @@ const Section6 = () => {
                 width={486}
                 height={356}
               />
-              <div className="btn">
+              {/* <div className="btn">
                 <button>Read More</button>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -53,9 +63,9 @@ const Section6 = () => {
                 width={486}
                 height={356}
               />
-              <div className="btn">
+              {/* <div className="btn">
                 <button>Read More</button>
-              </div>
+              </div> */}
             </div>
             <div
               className="content"
@@ -63,11 +73,19 @@ const Section6 = () => {
               data-aos-delay="400"
               data-aos-duration="1300"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
-              pellentesque vel ac consectetur ac vel tristique. A in urna, quis
-              integer tincidunt viverra ornare. Ac cursus a auctor ut neque
-              pharetra. Non pellentesque id sagittis sagittis, nullam elit lorem
-              luctus lectus. ElementuLorem
+              Lorem ipsum{" "}
+              <span>
+                dolor sit amet, consectetur adipiscing elit. Tincidunt
+                pellentesque vel ac consectetur ac vel tristique. A in urna,
+                quis integer tincidunt viverra ornare.{" "}
+              </span>{" "}
+              Ac cursus{" "}
+              <span>
+                {" "}
+                a auctor ut neque pharetra. Non pellentesque id sagittis
+                sagittis, nullam elit lorem luctus lectus. ElementuLorem...
+              </span>
+              <a href="#">Read More</a>
             </div>
           </div>
         </div>

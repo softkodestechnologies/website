@@ -5,14 +5,16 @@ const Section1 = () => {
   return (
     <section className="career_section1">
       <div className="section1_main_wrap">
-        <div className="section1_main_img1">
-          <Image
-            src="/assets/career_img1.png"
-            width={294}
-            height={292}
-            alt="circle"
-            priority
-          />
+        <div className="section1_main_img1 ">
+          <div className="emoji_bg">
+            <Image
+              src="/assets/emoji3.png"
+              width={360}
+              height={410}
+              alt="circle"
+              priority
+            />
+          </div>
         </div>
         <div
           className="section1_main"
@@ -50,7 +52,7 @@ const Section1 = () => {
         </div>
         <div className="section1_main_img2">
           <Image
-            src="/assets/career_img2.png"
+            src="/assets/emoji1.png"
             width={290}
             height={473}
             alt="circle"
@@ -65,7 +67,7 @@ const Section1 = () => {
       >
         <div className="section1_aux_img1">
           <Image
-            src="/assets/career_img3.png"
+            src="/assets/emoji2.png"
             width={247}
             height={420}
             alt="circle"

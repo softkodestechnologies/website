@@ -1,9 +1,17 @@
-@media (max-width: 1250px) {
+@media (max-width: 1350px) {
   .section3 .section3_card::before {
-    transform: rotate(-90deg) translateX(-110%) translateY(120%);
+    transform: rotate(-90deg) translateX(-120%) translateY(200%);
   }
   .section3 .section3_card::after {
-    transform: rotate(-90deg) translateX(-5%) translateY(-5%);
+    transform: rotate(-90deg) translateX(-25%) translateY(-85%);
+  }
+}
+@media (max-width: 1250px) {
+  .section3 .section3_card::before {
+    transform: rotate(-90deg) translateX(-120%) translateY(170%);
+  }
+  .section3 .section3_card::after {
+    transform: rotate(-90deg) translateX(-25%) translateY(-65%);
   }
   .section1_aux_img2 {
     width: 200px;
@@ -70,12 +78,12 @@
     font-size: 24px;
   }
   .section3 .section3_card::before {
-    transform: rotate(-90deg) translateX(-120%) translateY(90%);
-    font-size: 126px;
+    transform: rotate(-90deg) translateX(-140%) translateY(130%);
+    font-size: 96px;
   }
   .section3 .section3_card::after {
-    transform: rotate(-90deg) translateX(-20%) translateY(15%);
-    font-size: 126px;
+    transform: rotate(-90deg) translateX(-50%) translateY(-45%);
+    font-size: 96px;
   }
   .section6 .section6_cards .section6_card .content {
     font-size: 20px;
@@ -172,6 +180,11 @@
 }
 
 @media (max-width: 1024px) {
+  .section2 {
+    .container {
+      padding-inline: 140px
+    }
+  }
   .nav_img_wrap {
     display: none;
   }
@@ -204,12 +217,12 @@
     margin-left: 6rem;
   }
   .section3 .section3_card::before {
-    transform: rotate(-90deg) translateX(-128%) translateY(100%);
-    font-size: 88px;
+    transform: rotate(-90deg) translateX(-148%) translateY(140%);
+    font-size: 68px;
   }
   .section3 .section3_card::after {
-    transform: rotate(-90deg) translateX(-40%) translateY(5%);
-    font-size: 88px;
+    transform: rotate(-90deg) translateX(-70%) translateY(-85%);
+    font-size: 68px;
   }
   .section3 .section3_card {
     max-width: 500px;
@@ -501,7 +514,7 @@
     margin-left: 2rem;
   }
   .section3 .section3_card::before {
-    transform: rotate(-90deg) translateX(-138%) translateY(90%);
+    transform: rotate(-90deg) translateX(-158%) translateY(90%);
     font-size: 50px;
   }
   .section3 .section3_card::after {

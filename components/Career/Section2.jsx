@@ -33,30 +33,32 @@ const Section2 = () => {
               </div>
             </div>
             <div
-              className="section2_img"
+              className="section2_img "
               data-aos="fade-right"
               data-aos-delay="400"
               data-aos-duration="1400"
             >
-              <Image
-                src="/assets/career_img9.png"
-                alt="img"
-                width={409}
-                height={608}
-              />
+              <div className="emoji2">
+                <Image
+                  src="/assets/emoji4.png"
+                  alt="img"
+                  width={409}
+                  height={608}
+                />
+              </div>
             </div>
           </div>
 
           <div className="section2_card_mul">
             <div className="section2_img">
               <div
-                className="section2_img1"
+                className="section2_img1 emoji3"
                 data-aos="fade-right"
                 data-aos-delay="400"
                 data-aos-duration="1400"
               >
                 <Image
-                  src="/assets/career_img10.png"
+                  src="/assets/emoji5.png"
                   alt="img"
                   width={412}
                   height={376}
@@ -69,7 +71,7 @@ const Section2 = () => {
                 data-aos-duration="1400"
               >
                 <Image
-                  src="/assets/career_img11.png"
+                  src="/assets/emoji6.png"
                   alt="img"
                   width={412}
                   height={672}

@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
+import { useRouter } from "next/router";
 
 const Section8 = () => {
+  const router = useRouter();
   const changeBg = (e) => {
     if (!window) return;
     const back = document.querySelector(".section8");
@@ -34,6 +36,7 @@ const Section8 = () => {
           data-aos-duration="500"
         >
           <button
+            onClick={() => router.push("/contact")}
             className="btn_target"
             onMouseEnter={changeBg}
             onMouseLeave={removeBg}
