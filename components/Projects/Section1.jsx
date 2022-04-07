@@ -20,7 +20,7 @@ const Section1 = () => {
           data-aos-duration="1300"
         >
           <Image
-            src="/assets/image24.png"
+            src="/assets/image24.jpg"
             width={900}
             height={650}
             alt="Project"
