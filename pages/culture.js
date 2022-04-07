@@ -66,7 +66,7 @@ const Culture = () => {
                 <CultureSection6 />
                 <CultureSection7 />
                 <CultureSection8 />
-                <HorFooter />
+                {/* <HorFooter /> */}
               </div>
             </div>
           </main>

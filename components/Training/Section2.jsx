@@ -20,7 +20,7 @@ const Section2 = () => {
               Including computer appreciation, Using the Internet, Ms office
               suit, and coral draw.
             </p>
-            <div className="button_card">$42 (8weeks)</div>
+            <div className="button_card btn_card_hover">$42 (8weeks)</div>
           </div>
 
           <div
@@ -36,7 +36,7 @@ const Section2 = () => {
               Learn how to create stunning website designs with html, Css and
               Javascript.
             </p>
-            <div className="button_card">$120 (12weeks)</div>
+            <div className="button_card btn_card_hover">$120 (12weeks)</div>
           </div>
 
           <div
@@ -53,7 +53,7 @@ const Section2 = () => {
               Including computer appreciation, Using the Internet, Ms office
               suit, and coral draw.
             </p>
-            <div className="button_card">$330 (12weeks)</div>
+            <div className="button_card btn_card_hover">$330 (12weeks)</div>
           </div>
 
           <div
@@ -69,7 +69,7 @@ const Section2 = () => {
               Learn to build beautiful cross platform mobile applications using
               the Flutter and Dart
             </p>
-            <div className="button_card">$350 (12weeks)</div>
+            <div className="button_card btn_card_hover">$350 (12weeks)</div>
           </div>
 
           <div
@@ -85,7 +85,7 @@ const Section2 = () => {
               Learn to create websites and mobile applicaton interfaces and
               kickstart your career as a UI/UX designer
             </p>
-            <div className="button_card">$300 (11weeks)</div>
+            <div className="button_card btn_card_hover">$300 (11weeks)</div>
           </div>
 
           <div
@@ -101,7 +101,7 @@ const Section2 = () => {
               Learn Android app development from Scratch to Advance. Learn to
               code in Java while building fun Android projects.
             </p>
-            <div className="button_card">$320 (12weeks)</div>
+            <div className="button_card btn_card_hover">$320 (12weeks)</div>
           </div>
         </div>
       </div>

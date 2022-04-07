@@ -4,7 +4,6 @@ const Section3 = () => {
   return (
     <section className="training3 tr1">
       <div className="container">
-        <h1>OUR COURSES</h1>
         <div className="training3_cards">
           <div
             className="training3_card"
@@ -19,7 +18,7 @@ const Section3 = () => {
               Climb the ladder of Game development with Unreal Engine 4.x and
               Game development & design using Unity Engine.
             </p>
-            <div className="button_card">$362 (15weeks)</div>
+            <div className="button_card btn_card_hover">$362 (15weeks)</div>
           </div>
 
           <div
@@ -36,7 +35,7 @@ const Section3 = () => {
               Marketing platforms for Marketing including: SEO, Youtube, Email,
               Facebook Marketing, Analytics and more!
             </p>
-            <div className="button_card">$172 (18weeks)</div>
+            <div className="button_card btn_card_hover">$172 (18weeks)</div>
           </div>
 
           <div
@@ -53,7 +52,7 @@ const Section3 = () => {
               Development library (Node.js). And build fully functional
               database.
             </p>
-            <div className="button_card">$172 (8weeks)</div>
+            <div className="button_card btn_card_hover">$172 (8weeks)</div>
           </div>
 
           <div
@@ -69,7 +68,7 @@ const Section3 = () => {
               Climb the ladder of Game development with Unreal Engine 4.x and
               Game development & design using Unity Engine.
             </p>
-            <div className="button_card">$285 (8weeks)</div>
+            <div className="button_card btn_card_hover">$285 (8weeks)</div>
           </div>
 
           <div
@@ -85,7 +84,7 @@ const Section3 = () => {
               Climb the ladder of Game development with Unreal Engine 4.x and
               Game development & design using Unity Engine.
             </p>
-            <div className="button_card">$310 (12weeks)</div>
+            <div className="button_card btn_card_hover">$310 (12weeks)</div>
           </div>
 
           <div
@@ -102,7 +101,7 @@ const Section3 = () => {
               Development library (Node.js). And build fully functional
               database.
             </p>
-            <div className="button_card">$300 (12weeks)</div>
+            <div className="button_card btn_card_hover">$300 (12weeks)</div>
           </div>
         </div>
       </div>

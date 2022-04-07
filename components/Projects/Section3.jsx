@@ -27,7 +27,7 @@ const Section3 = () => {
               data-aos-delay="600"
               data-aos-duration="1300"
             >
-              <p>Easynavigation through this interior design website</p>
+              <p>Easy navigation through this interior design website</p>
             </div>
           </div>
 
@@ -51,9 +51,7 @@ const Section3 = () => {
               data-aos-delay="600"
               data-aos-duration="1300"
             >
-              <p>
-                This website lets you select and purchase the perfect droneh
-              </p>
+              <p>This website lets you select and purchase the perfect drone</p>
             </div>
           </div>
 
