@@ -76,14 +76,14 @@ a {
 
 // Cursor follow circle
 .circle {
-  position:absolute;
+  position: absolute;
   // transform:translate(-50%,-50%);
-  height:20px;
-  width:20px;
+  height: 20px;
+  width: 20px;
   // transform: translateX(-50%) translateY(-50%);
   z-index: 1001;
-  border-radius:50%;
-  background-color: #845EC2;
+  border-radius: 50%;
+  background-color: #845ec2;
   transition: all ease-out 0.5s;
   display: none;
   opacity: 0.9;
@@ -292,6 +292,9 @@ header,
   height: 100%;
   // background-color: #000;
   // color: #fff;
+  .container {
+    padding: 0 150px;
+  }
   .section1_wrap {
     h1 {
       margin-bottom: 5rem;
@@ -310,9 +313,10 @@ header,
         text-align: center;
 
         .card_image:hover {
-          // transform: perspective(2500px) rotateX(20deg) scale(1.05);
+          transform: perspective(2500px) rotateX(20deg) scale(1.05);
         }
         .card_image {
+          // border: 1px solid #fff;
           // transform: perspective(2500px) rotateY(0);
           // transition: all 0.5s cubic-bezier(0.67, 0, 0.285, 1);
           img {
@@ -454,14 +458,14 @@ header,
     padding-bottom: 94px;
     .content {
       h1 {
-        font-size: 52px;
+        font-size: 45px;
         max-width: 376px;
         margin-bottom: 65px;
         font-weight: 400;
-        line-height: 74.19px;
+        line-height: 53.19px;
       }
       h2 {
-        font-size: 40px;
+        font-size: 32px;
         max-width: 859px;
         font-weight: 400;
         span {
@@ -495,7 +499,7 @@ header,
         text-align: right;
         margin-top: 10rem;
         h1 {
-          font-size: 65px;
+          font-size: 50px;
           font-weight: 400;
         }
         h2 {
@@ -503,7 +507,7 @@ header,
         }
         h2,
         h3 {
-          font-size: 40px;
+          font-size: 32px;
           font-weight: 400;
           span {
             color: rgba(255, 255, 255, 0.66);
@@ -838,7 +842,6 @@ footer {
   }
 }
 
-
 // Navigation Styling
 .nav_img_wrap {
   position: absolute;
@@ -945,7 +948,7 @@ footer {
             color: rgba(0, 0, 0, 0.43);
           }
           li:last-child {
-            color:rgba(42, 116, 185, 0.69);
+            color: rgba(42, 116, 185, 0.69);
             margin-top: 1rem;
           }
         }
@@ -1272,6 +1275,17 @@ footer {
 }
 
 // Contact
+.contact_btn {
+  text-align: right;
+  button {
+    background: #000;
+    border-radius: 13px;
+    font-size: 20px;
+    padding: 9px 40px;
+    border-width: 0;
+    color: #fff;
+  }
+}
 .contact {
   padding: 2rem 0;
   margin-top: 80px;
@@ -1316,12 +1330,12 @@ footer {
             align-items: center;
             gap: 10px;
             label {
-              font-size: 40px;
+              font-size: 32px;
               color: rgba(0, 0, 0, 0.8);
             }
             input {
-              width: 80px;
-              height: 80px;
+              width: 50px;
+              height: 50px;
             }
           }
         }
@@ -1339,14 +1353,14 @@ footer {
         }
         .budget_wrap {
           display: flex;
-          gap: 10px;
+          gap: 25px;
           flex-wrap: wrap;
           .budget_btn {
             background-color: #000;
             color: #fff;
-            padding: 10px 10px;
+            padding: 14px 20px;
             border-radius: 8px;
-            font-size: 35px;
+            font-size: 26px;
           }
         }
       }
@@ -1390,7 +1404,7 @@ footer {
         margin-bottom: 2rem;
       }
       p {
-        font-size: 32px;
+        font-size: 26px;
         // color: rgba(0, 0, 0, 0.68);
       }
     }
@@ -1435,12 +1449,12 @@ footer {
   border-radius: 44px;
 }
 .emoji2 {
-  background-color: #731E37;
+  background-color: #731e37;
   border-radius: 30px;
   width: fit-content;
 }
 .emoji3 {
-  background-color: #F6742B;
+  background-color: #f6742b;
   border-radius: 44px;
 }
 .career_section1 {
@@ -1787,7 +1801,7 @@ footer {
 }
 
 .hor-container {
-  padding: 32px 72px 12px 72px;
+  padding: 3ction22px 72px 12px 72px;
 }
 
 .culture-page {

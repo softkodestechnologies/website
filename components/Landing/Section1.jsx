@@ -15,7 +15,7 @@ const Section1 = () => {
     };
   }, []);
   const checkOp = () => {
-    if (window.scrollY * 5 - 800 < 0) {
+    if (window.scrollY * 5 - 850 < 0) {
       setCard1Op(0 + window.scrollY * 0.0125);
       setCard1Pos(window.scrollY * 5 - 800);
       setCard2Pos(-window.scrollY * 5 + 800);

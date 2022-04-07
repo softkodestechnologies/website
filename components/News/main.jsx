@@ -30,8 +30,8 @@ const main = () => {
             <Image
               src="/assets/image21.png"
               alt="news"
-              width={948}
-              height={532}
+              width={868}
+              height={502}
             />
           </div>
           <div
@@ -77,8 +77,8 @@ const main = () => {
             <Image
               src="/assets/image35.png"
               alt="news"
-              width={948}
-              height={532}
+              width={868}
+              height={502}
             />
           </div>
           <div

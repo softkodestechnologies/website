@@ -33,8 +33,8 @@ const Section2 = () => {
           >
             <Image
               alt="image"
-              width={481}
-              height={687}
+              width={401}
+              height={587}
               src="/assets/image40.png"
             />
           </div>
@@ -52,8 +52,8 @@ const Section2 = () => {
           >
             <Image
               alt="image"
-              width={482}
-              height={668}
+              width={401}
+              height={587}
               src="/assets/image7.png"
             />
           </div>

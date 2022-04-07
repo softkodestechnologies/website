@@ -129,6 +129,9 @@ const main = () => {
                 placeholder=" Tell Us About Your Project"
               ></textarea>
             </div>
+            <div className="contact_btn">
+              <button>Submit</button>
+            </div>
           </form>
         </div>
       </div>
