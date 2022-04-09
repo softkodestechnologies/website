@@ -196,7 +196,7 @@ const Nav = () => {
                     <span></span>News
                   </motion.li>
                   <motion.li
-                    onMouseEnter={() => setCurrColor("#fd5a1e")}
+                    onMouseEnter={() => setCurrColor("#1926DF")}
                     onMouseLeave={() => setCurrColor("#fff")}
                     className="con_hov"
                     onClick={() => move("/contact")}
