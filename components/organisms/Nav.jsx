@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/link-passhref */
 import Image from "next/image";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { useGeneralContext } from "../../context/GeneralContext";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 const whatVariants = {
   initial: {
@@ -215,7 +217,12 @@ const Nav = () => {
                 <ul>
                   <h1>More</h1>
                   <li>Twitter</li>
-                  <li>Instagram</li>
+                  <Link
+                    href="https://www.instagram.com/softkodesworld"
+                    target="_blank"
+                  >
+                    <li>Instagram</li>
+                  </Link>
                   <li>Facebook</li>
                   <li>Subscribe to our newsletter</li>
                 </ul>

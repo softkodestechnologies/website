@@ -424,6 +424,24 @@
 }
 
 @media (max-width: 768px) {
+  .section6 .section6_cards .section6_card:nth-child(2) {
+    margin-top: 4.5rem;
+  }
+  .section6 .section6_cards .section6_card .image {
+    margin-top: 30px;
+  }
+  .section2 {
+    .container {
+      padding-inline: 60px
+    }
+  }
+  .section6 .container {
+    padding: 0 60px;
+  }
+  .project3 h1 {
+    font-size: 40px;
+    margin-bottom: 3rem;
+  }
   .container {
     padding: 0 20px;
   }
@@ -825,6 +843,9 @@
 }
 
 @media (max-width: 580px) {
+  .section4 h1 {
+    font-size: 32px;
+  }
   .section3 .section3_card::before {
     transform: rotate(-90deg) translateX(-138%) translateY(80%);
     font-size: 50px;
@@ -915,9 +936,9 @@
   .nav .nav_con .nav_header .title {
     width: 160px;
   }
-  .nav {
-    padding: 30px 20px;
-  }
+  // .nav {
+  //   padding: 30px 20px;
+  // }
   .project1 h1 {
     font-size: 60px;
   }
@@ -1045,6 +1066,11 @@
 }
 
 @media (max-width: 500px) {
+  .section2 {
+    .container {
+      padding-inline: 30px
+    }
+  }
   .landing_hero .landing_hero_wrap .hero_content .div_1 {
     max-width: 90vw;
     font-size: 24px;
@@ -1189,6 +1215,9 @@
 }
 
 @media (max-width: 400px) {
+  .section6 .container {
+    padding: 0 20px;
+  }
   .section4 .section4_parts .section4_part .parallax_wrap {
     width: 225px;
     height: auto;

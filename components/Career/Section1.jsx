@@ -8,7 +8,7 @@ const Section1 = () => {
         <div className="section1_main_img1 ">
           <div className="emoji_bg">
             <Image
-              src="/assets/emoji3.png"
+              src="/assets/emoji3.jpg"
               width={360}
               height={410}
               alt="circle"

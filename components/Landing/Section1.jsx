@@ -172,6 +172,7 @@ const Section1 = () => {
         </div>
       </section>
 
+      {/* Section 1 mobile */}
       <section className="section1_mobile">
         <div className="container">
           <div className="mobile_pt1">
@@ -229,7 +230,7 @@ const Section1 = () => {
               </div>
             </div>
           </div>
-          <div className="mobile_pt2">
+          <div className="mobile_pt2" id="bg-1-mob">
             <div className="mobile_pt2_wrap">
               <div
                 className="content "

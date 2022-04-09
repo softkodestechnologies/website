@@ -50,7 +50,9 @@ export default function Home() {
   }, []);
 
   const checkBg = (e) => {
-    const bg1 = document.getElementById("bg-1");
+    const bg1 = document.getElementById(
+      window.innerWidth > 768 ? "bg-1" : "bg-1-mob"
+    );
     const bg2 = document.getElementById("bg-2");
     const bg3 = document.getElementById("bg-3");
     const ans = percentageSeen(bg1);
