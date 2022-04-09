@@ -75,7 +75,7 @@ const Section1 = () => {
         </div>
         <div className="section1_aux_img2">
           <Image
-            src="/assets/career_img4.png"
+            src="/assets/emoji4.jpg"
             width={359}
             height={586}
             alt="circle"

@@ -1507,6 +1507,13 @@ footer {
           border: 1px solid #000;
         }
       }
+      .section1_btn button {        
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      .section1_btn button:hover {       
+        transform: scale(1.05);
+      }
     }
   }
   .section1_aux_wrap {
