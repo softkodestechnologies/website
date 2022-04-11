@@ -14,9 +14,9 @@ const Header = ({ black }) => {
       <div className="container">
         <div className="logo" onClick={() => router.push("/")}>
           <Image
-            src="/assets/title_small.svg"
+            src="/assets/title_new.svg"
             priority
-            width={181}
+            width={161}
             height={50}
             alt="title"
           />
