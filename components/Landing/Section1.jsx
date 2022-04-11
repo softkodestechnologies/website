@@ -198,7 +198,7 @@ const Section1 = () => {
                 data-aos-delay="400"
               >
                 <h2>Development</h2>
-                <p>
+                <p className="cont_blur">
                   We specialise in Web development, android development, IOS
                   development, HTML/CSS/JS, Backend/API, integrated word press
                   at.
@@ -221,7 +221,7 @@ const Section1 = () => {
                   data-aos-duration="2000"
                 >
                   <Image
-                    src="/assets/image1.png"
+                    src="/assets/image39.png"
                     alt="test"
                     width={217}
                     height={243}
@@ -238,8 +238,8 @@ const Section1 = () => {
                 data-aos-delay="400"
               >
                 <h2>Design</h2>
-                <p>
-                  We provide dhesign services ranging from Animation,
+                <p className="cont_blur">
+                  We provide design services ranging from Animation,
                   Iconography, 2D/3D graphics, and Branding to graphic design
                   and Ui/Ux design.
                 </p>
@@ -300,11 +300,11 @@ const Section1 = () => {
               >
                 <div className="fake"></div>
                 <div className="content_wrap ">
-                  <h2>Design</h2>
+                  <h2>Training</h2>
                   <p>
-                    We provide dhesign services ranging from Animation,
-                    Iconography, 2D/3D graphics, and Branding to graphic design
-                    and Ui/Ux design.
+                    We offer intensive and thorough training on Ui/Ux Design,
+                    Graphic Design, Mobile Development, Web Development and Game
+                    Development
                   </p>
                 </div>
               </div>

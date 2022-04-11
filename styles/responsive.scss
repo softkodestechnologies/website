@@ -180,6 +180,18 @@
 }
 
 @media (max-width: 1024px) {
+  .loading_left {
+    flex: 1;
+  }
+  .loading_right {
+    flex: 1;
+  }
+  .loading_centre {
+    flex: 2;
+   }
+  .loading_wrap {
+    padding: 34px 25px 74px 25px;
+  }
   .section2 {
     .container {
       padding-inline: 140px
@@ -252,18 +264,21 @@
   .section7 h1 {
     font-size: 60px;
   }
-  .loading_wrap {
-    padding: 74px 35px;
-  }
+  // .loading_wrap {
+  //   padding: 74px 35px;
+  // }
+  // .loading_centre {
+  //   min-width: 250px;
+  // }
   .loading_left h1 {
     font-size: 30px;
   }
   .loading_right h1 {
     font-size: 30px;
   }
-  .loading_centre_wrap h1 {
-    padding: 40px 35px;
-  }
+  // .loading_centre_wrap h1 {
+  //   padding: 40px 35px;
+  // }
   .project1 {
     padding-top: 3rem;
   }
@@ -424,6 +439,12 @@
 }
 
 @media (max-width: 768px) {
+  .loading_centre {
+    height: 250px;
+  }
+  .loading_centre_wrap h1 {
+    font-size: 60px;
+  }
   .section6 .section6_cards .section6_card:nth-child(2) {
     margin-top: 4.5rem;
   }
@@ -569,7 +590,8 @@
   }
   footer .footer_wrap .top .center h1,
   footer .footer_wrap .top .right h1 {
-    display: none;
+    font-size: 10px;
+    margin-bottom: 7px;
   }
   footer .footer_wrap .top .center,
   footer .footer_wrap .top .right {
@@ -581,7 +603,8 @@
   }
   footer .footer_wrap .top .left h3 {
     font-size: 12px;
-    margin-bottom: 1rem;
+    margin-bottom: 8px;
+    margin-top: 8px;
   }
   footer .footer_wrap .top .left .image {
     width: 200px;
@@ -589,6 +612,7 @@
   footer .footer_wrap .top .center li,
   footer .footer_wrap .top .right li {
     font-size: 12px;
+    margin-bottom: 1px;
   }
   footer .footer_wrap .bottom {
     font-size: 10px;
@@ -843,6 +867,12 @@
 }
 
 @media (max-width: 580px) {
+  .section2 .part1 .image {
+    width: 180px;
+  }
+  .section2 .part2 .image {
+    width: 180px;
+  }
   .section4 h1 {
     font-size: 32px;
   }
@@ -894,7 +924,7 @@
   }
   footer .footer_wrap .top .center,
   footer .footer_wrap .top .right {
-    margin-top: 4em;
+    margin-top: 1em;
   }
   footer .footer_wrap .top .center li,
   footer .footer_wrap .top .right li {
@@ -912,27 +942,27 @@
     padding: 3rem 1rem;
     font-size: 30px;
   }
-  .loading_wrap {
-    padding: 44px 15px;
-  }
-  .loading_left h1 {
-    font-size: 20px;
-  }
-  .loading_right h1 {
-    font-size: 20px;
-  }
-  .loading_centre {
-    width: 250px;
-    height: 250px;
-  }
-  .loading_centre_wrap h1 {
-    padding: 30px 25px;
-    font-size: 25px;
-  }
-  .loading_centre_wrap:before,
-  .loading_centre_wrap:after {
-    height: 100vh;
-  }
+  // .loading_wrap {
+  //   padding: 44px 15px;
+  // }
+  // .loading_left h1 {
+  //   font-size: 20px;
+  // }
+  // .loading_right h1 {
+  //   font-size: 20px;
+  // }
+  // .loading_centre {
+  //   min-width: 100px;
+  //   padding: 10px;
+  // }
+  // .loading_centre_wrap h1 {
+  //   padding: 30px 25px;
+  //   font-size: 25px;
+  // }
+  // .loading_centre_wrap:before,
+  // .loading_centre_wrap:after {
+  //   height: 100vh;
+  // }
   .nav .nav_con .nav_header .title {
     width: 160px;
   }
@@ -979,7 +1009,7 @@
     height: 30px;
   }
   .contact .contact_form_wrap form .budget .budget_wrap .budget_btn {
-    font-size: 20px;
+    font-size: 16px;
   }
   .news .news_card {
     padding: 6rem 0;
@@ -1066,6 +1096,23 @@
 }
 
 @media (max-width: 500px) {
+  .loading_centre {
+    height: 180px;
+    flex: 3;
+  }
+  .loading_left h1 {
+    font-size: 22px;
+  }
+  .loading_right h1 {
+    font-size: 22px;
+  }
+  .loading_centre_wrap h1 {
+    font-size: 24px;
+  }
+  .contact .contact_form_wrap form .budget .budget_wrap .budget_btn {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
   .section2 {
     .container {
       padding-inline: 30px
@@ -1215,6 +1262,12 @@
 }
 
 @media (max-width: 400px) {
+  .loading_left h1 {
+    font-size: 18px;
+  }
+  .loading_right h1 {
+    font-size: 18px;
+  }
   .section6 .container {
     padding: 0 20px;
   }
@@ -1323,6 +1376,15 @@
 }
 
 @media (max-width: 350px) {
+  .loading_left h1 {
+    font-size: 16px;
+  }
+  .loading_right h1 {
+    font-size: 16px;
+  }
+  .loading_centre {
+    height: 150px;
+  }
   .career_section4 .search_cards .search_card {
     width: 290px;
   }

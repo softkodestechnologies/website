@@ -48,12 +48,12 @@ const Footer = () => {
           >
             <h1 onClick={() => router.push("/contact")}>Contact Us</h1>
             <ul>
-              <li>Dribble</li>
+              {/* <li>Dribble</li> */}
               <li>Instagram</li>
               <li>Twitter</li>
-              <li>Behance</li>
+              {/* <li>Behance</li> */}
               <li>Facebook</li>
-              <li>Medium</li>
+              {/* <li>Medium</li> */}
             </ul>
           </div>
         </div>

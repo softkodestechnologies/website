@@ -103,42 +103,83 @@ a {
 .loading_wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
   height: 100vh;
   overflow: hidden;
-  padding: 74px 0px;
+  padding: 34px 65px 74px 65px;
+  color: #000;
+  background-color: #fff;
+}
+
+.loading_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // flex: 1;
+  h1 {
+    font-size: 80px;
+    font-weight: 400;
+  }
 }
 
 .loading_centre {
+  align-self: center;
+  // flex: 1;
+  // padding: 30px 30px;
   border: 3px dashed #000;
   border-radius: 100%;
-  text-align: center;
-  width: 400px;
+  // min-width: 351px;
+    width: 400px;
   height: 400px;
+  text-align: center;
+}
+
+.loading_centre_wrap {
+  background-color: #fff;
+  color: #000;
+  border-radius: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  h1 {
+    font-weight: 400;
+    font-size: 85px;
+  }
 }
 
-.loading_bar {
-  width: 100%;
-}
-
-.prog_container {
-  // padding: 5px 0;
-  background-color: #ededed;
-}
-
-.prog_barCompleted {
+.loading_centre_wrap:after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: -10%;
+  width: 5px;
+  height: 200%;
+  transform: translateY(-100%);
   background-color: #000;
-  // width: 10%;
 }
 
-.prog_label {
-  font-size: 20px;
-  color: #fff;
+.loading_centre_wrap:before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: -90%;
+  width: 5px;
+  height: 200%;
+  transform: translateY(100%);
+  background-color: #000;
 }
+
+.loading_right {
+  align-self: flex-end;
+  // flex: 1;
+  h1 {
+    font-size: 80px;
+    font-weight: 400;
+  }
+}
+
 
 // Header
 header,
@@ -372,7 +413,7 @@ header,
         }
         p {
           font-size: 14px;
-          color: rgba(255, 255, 255, 0.46);
+          // color: rgba(255, 255, 255, 0.46);
         }
       }
       .image_wrap {
@@ -843,6 +884,9 @@ footer {
 }
 
 // Navigation Styling
+.img_culture_2 {
+  transform: rotate(0deg) translateX(-15px) translateY(-10px);
+}
 .nav_img_wrap {
   position: absolute;
   top: 20%;

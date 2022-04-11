@@ -95,21 +95,21 @@ const Nav = () => {
                   style={{ position: "absolute" }}
                 >
                   <Image
-                    src="/assets/nav_img4.png"
+                    src="/assets/nav_img6.png"
                     alt="nav img"
                     width={241}
                     height={212}
                   />
                 </div>
                 <div
-                  className="nav_img_culture"
+                  className="nav_img_culture img_culture_2"
                   // style={{ position: "absolute" }}
                 >
                   <Image
-                    src="/assets/nav_img5.png"
+                    src="/assets/nav_img4.png"
                     alt="nav img"
-                    width={241}
-                    height={212}
+                    width={281}
+                    height={252}
                   />
                 </div>
                 {/* <div
@@ -142,7 +142,7 @@ const Nav = () => {
               <div className="title" onClick={() => router.push("/")}>
                 <Image
                   src="/assets/title.svg"
-                  width={251}
+                  width={201}
                   height={79}
                   alt="logo"
                 />

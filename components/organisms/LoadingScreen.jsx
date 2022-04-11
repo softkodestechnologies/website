@@ -5,18 +5,19 @@ import ProgressBar from "@ramonak/react-progress-bar";
 const LoadingScreen = ({ loading, percent }) => {
   return (
     <div className={loading ? "loading_wrap" : "none"}>
-      <div className="loading_centre">
-        <Image src="/assets/logo.svg" alt="" height={235} width={215} />
+      <div className="loading_left">
+        <div className="loading_left_img">
+          <Image src="/assets/title_new.svg" alt="" height={75} width={271} />
+        </div>
+        <h1>Experience</h1>
       </div>
-      <div className="loading_bar">
-        <ProgressBar
-          completed={percent}
-          customLabel="Loading..."
-          height="26px"
-          bgColor="#000"
-          borderRadius="10px"
-          transitionDuration="0.2s"
-        />
+      <div className="loading_centre">
+        <div className="loading_centre_wrap">
+          <h1>{percent}%</h1>
+        </div>
+      </div>
+      <div className="loading_right">
+        <h1>Loading...</h1>
       </div>
     </div>
   );
