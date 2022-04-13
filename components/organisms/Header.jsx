@@ -34,13 +34,13 @@ const Header = ({ black }) => {
           <div className="bars_aux" onClick={openNav}>
             <Image
               src="/assets/bar_aux.svg"
-              width={39}
-              height={39}
+              width={24}
+              height={24}
               alt="bars"
             />
           </div>
           <div className="bars" onClick={openNav}>
-            <Image src="/assets/bars.svg" width={29} height={29} alt="bars" />
+            <Image src="/assets/bars.svg" width={24} height={24} alt="bars" />
           </div>
           {/* <h1>Menu</h1> */}
         </div>

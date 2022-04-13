@@ -89,6 +89,20 @@ const Nav = () => {
               variants={whatVariants}
               animate={!culShow ? "initial" : "animate"}
             >
+              <Image
+                src="/assets/nav_img7.png"
+                alt="nav img"
+                width={323}
+                height={215}
+              />
+            </motion.div>
+            {/* Career images */}
+
+            <motion.div
+              className="nav_img_wrap"
+              variants={whatVariants}
+              animate={!newsShow ? "initial" : "animate"}
+            >
               <div className="nav_img_culture_wrap">
                 <div
                   className="nav_img_culture"
@@ -112,32 +126,9 @@ const Nav = () => {
                     height={252}
                   />
                 </div>
-                {/* <div
-                  className="nav_img_culture"
-                  // style={{ position: "absolute" }}
-                >
-                  <Image
-                    src="/assets/nav_img6.png"
-                    alt="nav img"
-                    width={241}
-                    height={212}
-                  />
-                </div> */}
               </div>
             </motion.div>
-            {/* Career images */}
-            <motion.div
-              className="nav_img_wrap"
-              variants={whatVariants}
-              animate={!newsShow ? "initial" : "animate"}
-            >
-              <Image
-                src="/assets/nav_img7.png"
-                alt="nav img"
-                width={323}
-                height={215}
-              />
-            </motion.div>
+
             <div className="nav_header">
               <div className="title" onClick={() => router.push("/")}>
                 <Image
@@ -196,7 +187,7 @@ const Nav = () => {
                     <span></span>News
                   </motion.li>
                   <motion.li
-                    onMouseEnter={() => setCurrColor("#1926DF")}
+                    onMouseEnter={() => setCurrColor("#fff")}
                     onMouseLeave={() => setCurrColor("#fff")}
                     className="con_hov"
                     onClick={() => move("/contact")}

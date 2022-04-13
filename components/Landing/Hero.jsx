@@ -39,8 +39,7 @@ const Hero = () => {
             >
               <p>
                 Do you need your brand to look endearing on the web? need a user
-                friendly app to create value? or you need help running your
-                online business?{" "}
+                friendly app to create value?
               </p>
             </div>
             <div
@@ -51,10 +50,9 @@ const Hero = () => {
             >
               <div className="div_2_content">
                 <p>
-                  We provide all these with ease. Softkodes is a tech solutions
-                  company with solid design and development expertise. We build
-                  standardized applications, provide online business services
-                  and offer training is this areas.
+                  Softkodes is a tech solutions company with solid design and
+                  development expertise. We build state-of-the-art websites,
+                  mobile applications, and provide online business services.
                 </p>
               </div>
 

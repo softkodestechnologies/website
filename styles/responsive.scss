@@ -1096,6 +1096,12 @@
 }
 
 @media (max-width: 500px) {
+  .nav .nav_con .nav_header .nav_icon {
+    font-size: 1.4rem;
+  }
+  .nav .nav_con .nav_header .title {
+    width: 120px;
+  }
   .loading_centre {
     height: 180px;
     flex: 3;
