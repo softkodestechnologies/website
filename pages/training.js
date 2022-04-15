@@ -12,11 +12,11 @@ let bgChange = false;
 const Training = () => {
   const ovrRef = useRef(null);
   useEffect(() => {
-    if (!window) return;
-    window.addEventListener("scroll", checkBg);
-    return () => {
-      window.removeEventListener("scroll", checkBg);
-    };
+    // if (!window) return;
+    // window.addEventListener("scroll", checkBg);
+    // return () => {
+    //   window.removeEventListener("scroll", checkBg);
+    // };
   }, []);
 
   const checkBg = (e) => {

@@ -6,7 +6,7 @@ const Section1 = () => {
     <section className="career_section1">
       <div className="section1_main_wrap">
         <div className="section1_main_img1 ">
-          <div className="emoji_bg">
+          <div className="">
             <Image
               src="/assets/emoji3.jpg"
               width={360}
@@ -88,9 +88,9 @@ const Section1 = () => {
         data-aos-delay="400"
         data-aos-duration="1400"
       >
-        <div className="section1_aux_img1">
+        <div className="section1_aux_img1 emoji_bg ">
           <Image
-            src="/assets/career_img5.png"
+            src="/assets/emoji3.png"
             width={248}
             height={318}
             alt="circle"
@@ -98,15 +98,15 @@ const Section1 = () => {
         </div>
         <div className="section1_aux_img2">
           <Image
-            src="/assets/career_img6.png"
-            width={180}
-            height={308}
+            src="/assets/emoji8.png"
+            width={99}
+            height={116}
             alt="circle"
           />
         </div>
         <div className="section1_aux_img3">
           <Image
-            src="/assets/career_img7.png"
+            src="/assets/emoji9.png"
             width={202}
             height={217}
             alt="circle"
@@ -114,7 +114,7 @@ const Section1 = () => {
         </div>
         <div className="section1_aux_img4">
           <Image
-            src="/assets/career_img8.png"
+            src="/assets/emoji10.png"
             width={197}
             height={308}
             alt="circle"

@@ -25,8 +25,9 @@ const Section3 = () => {
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac tellus
-            nisl nisi.
+            Softkodes is a tech solutions company with solid design and
+            development expertise. We build state-of-the-art websites, mobile
+            applications, and provide online business services.
           </div>
         </div>
       </div>

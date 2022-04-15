@@ -571,9 +571,9 @@ header,
     }
     .section3_content {
       color: rgba(0, 0, 0, 0.61);
-      font-size: 29px;
+      font-size: 24px;
       font-weight: 400;
-      max-width: 485px;
+      max-width: 500px;
       margin-top: 1rem;
     }
   }
@@ -1320,6 +1320,14 @@ footer {
 }
 
 // Contact
+.ser_head_wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  .ser_em_wrap {
+    margin-bottom: 3rem;
+  }
+}
 .contact_btn {
   text-align: right;
   button {
@@ -1405,7 +1413,12 @@ footer {
             color: #fff;
             padding: 14px 20px;
             border-radius: 8px;
+            cursor: pointer;
             font-size: 26px;
+          }
+          .budget_btn.active {
+            background-color: lightgray;
+            
           }
         }
       }
@@ -1489,10 +1502,11 @@ footer {
 }
 
 // Career
-// .emoji_bg {
-//   background-color: #196285;
-//   border-radius: 44px;
-// }
+.emoji_bg {
+  background-color: #196285;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
 .emoji2 {
   background-color: #731E37;
   border-radius: 30px;
@@ -1568,10 +1582,25 @@ footer {
     gap: 41px;
     .section1_aux_img2 {
       margin-top: 4rem;
+      background-color: #FCC625;
+      border-radius: 10px;
     }
   }
   .section1_mob_wrap {
     display: none;
+    .section1_aux_img2 {
+      padding: 2rem 0;
+      background-color: #FCC625;
+      border-radius: 10px;
+    }
+    .section1_aux_img3 {
+      background-color: #FA8989;
+      border-radius: 10px;
+    }
+    .section1_aux_img4 {
+      background-color: #F6742B;
+      border-radius: 10px;
+    }
   }
 }
 

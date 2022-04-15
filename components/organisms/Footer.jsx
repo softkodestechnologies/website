@@ -1,6 +1,8 @@
+/* eslint-disable @next/next/link-passhref */
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   const router = useRouter();
@@ -49,10 +51,20 @@ const Footer = () => {
             <h1 onClick={() => router.push("/contact")}>Contact Us</h1>
             <ul>
               {/* <li>Dribble</li> */}
-              <li>Instagram</li>
+              <Link
+                href="https://www.instagram.com/softkodesworld"
+                target="_blank"
+              >
+                <li>Instagram</li>
+              </Link>
               <li>Twitter</li>
               {/* <li>Behance</li> */}
-              <li>Facebook</li>
+              <Link
+                href="https://www.linkedin.com/company/softkodes-tech-lim"
+                target="_blank"
+              >
+                <li>Linkedin</li>
+              </Link>
               {/* <li>Medium</li> */}
             </ul>
           </div>

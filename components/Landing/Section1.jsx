@@ -66,7 +66,7 @@ const Section1 = () => {
               >
                 <div className="card_image">
                   <Image
-                    src="/assets/image38.png"
+                    src="/assets/image41.png"
                     alt="test"
                     width={343}
                     height={455}
@@ -91,7 +91,7 @@ const Section1 = () => {
               >
                 <div className="card_image">
                   <Image
-                    src="/assets/image3.png"
+                    src="/assets/image42.png"
                     alt="test"
                     width={343}
                     height={455}
@@ -107,7 +107,7 @@ const Section1 = () => {
               >
                 <div className="card_image">
                   <Image
-                    src="/assets/image4.png"
+                    src="/assets/image43.png"
                     alt="test"
                     width={343}
                     height={455}
@@ -117,8 +117,7 @@ const Section1 = () => {
                   <h3>Design</h3>
                   <p>
                     We provide dhesign services ranging from Animation,
-                    Iconography, 2D/3D graphics, and Branding to graphic design
-                    and Ui/Ux design.
+                    Iconography, 2D/3D graphics.
                   </p>
                 </div>
               </div>
@@ -130,7 +129,7 @@ const Section1 = () => {
               >
                 <div className="card_image">
                   <Image
-                    src="/assets/image6.png"
+                    src="/assets/image44.png"
                     alt="test"
                     width={343}
                     height={455}

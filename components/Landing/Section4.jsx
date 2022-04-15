@@ -16,7 +16,7 @@ const Section4 = () => {
               <Parallax rotate={[35, 0]}>
                 <div className="parallax_wrap parallax_wrap1">
                   <Image
-                    src="/assets/alt_1.png"
+                    src="/assets/alt_2.png"
                     alt="image"
                     width={460}
                     height={460}
@@ -34,7 +34,7 @@ const Section4 = () => {
               <Parallax rotate={[-35, 0]}>
                 <div className="parallax_wrap parallax_wrap2">
                   <Image
-                    src="/assets/alt_2.png"
+                    src="/assets/image45.png"
                     alt="image"
                     width={460}
                     height={460}

@@ -90,10 +90,10 @@ const Nav = () => {
               animate={!culShow ? "initial" : "animate"}
             >
               <Image
-                src="/assets/nav_img7.png"
+                src="/assets/nav_img8.jpg"
                 alt="nav img"
                 width={323}
-                height={215}
+                height={315}
               />
             </motion.div>
             {/* Career images */}
@@ -106,10 +106,10 @@ const Nav = () => {
               <div className="nav_img_culture_wrap">
                 <div
                   className="nav_img_culture"
-                  style={{ position: "absolute" }}
+                  style={{ position: "relative", zIndex: 10 }}
                 >
                   <Image
-                    src="/assets/nav_img6.png"
+                    src="/assets/nav_img9.jpg"
                     alt="nav img"
                     width={241}
                     height={212}
@@ -117,10 +117,14 @@ const Nav = () => {
                 </div>
                 <div
                   className="nav_img_culture img_culture_2"
-                  // style={{ position: "absolute" }}
+                  style={{
+                    position: "relative",
+                    zIndex: 9,
+                    transform: "translateY(-96%) translateX(-20px)",
+                  }}
                 >
                   <Image
-                    src="/assets/nav_img4.png"
+                    src="/assets/nav_img5.png"
                     alt="nav img"
                     width={281}
                     height={252}
@@ -214,7 +218,12 @@ const Nav = () => {
                   >
                     <li>Instagram</li>
                   </Link>
-                  <li>Facebook</li>
+                  <Link
+                    href="https://www.linkedin.com/company/softkodes-tech-lim"
+                    target="_blank"
+                  >
+                    <li>Linkedin</li>
+                  </Link>
                   <li>Subscribe to our newsletter</li>
                 </ul>
               </div>

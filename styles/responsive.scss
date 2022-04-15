@@ -439,6 +439,18 @@
 }
 
 @media (max-width: 768px) {
+  .ser_head_wrap {
+    .ser_em_wrap {
+      width: 100px;
+
+    }
+  }
+  .contact .contact_form_wrap form .budget h2 {
+    font-size: 28px;
+  }
+  .contact .contact_form_wrap form .services h2 {
+    font-size: 28px;
+  }
   .loading_centre {
     height: 250px;
   }

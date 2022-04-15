@@ -2,11 +2,11 @@ import React from "react";
 
 const Section3 = () => {
   return (
-    <section className="training3 tr1">
+    <section className="training2 tr1">
       <div className="container">
-        <div className="training3_cards">
+        <div className="training2_cards">
           <div
-            className="training3_card"
+            className="training2_card"
             data-aos="fade-down"
             data-aos-delay="600"
             data-aos-duration="1300"
@@ -22,7 +22,7 @@ const Section3 = () => {
           </div>
 
           <div
-            className="training3_card"
+            className="training2_card"
             data-aos="fade-down"
             data-aos-delay="600"
             data-aos-duration="1300"
@@ -39,7 +39,7 @@ const Section3 = () => {
           </div>
 
           <div
-            className="training3_card"
+            className="training2_card"
             data-aos="fade-down"
             data-aos-delay="600"
             data-aos-duration="1300"
@@ -56,7 +56,7 @@ const Section3 = () => {
           </div>
 
           <div
-            className="training3_card"
+            className="training2_card"
             data-aos="fade-down"
             data-aos-delay="600"
             data-aos-duration="1300"
@@ -72,7 +72,7 @@ const Section3 = () => {
           </div>
 
           <div
-            className="training3_card"
+            className="training2_card"
             data-aos="fade-down"
             data-aos-delay="600"
             data-aos-duration="1300"
@@ -88,7 +88,7 @@ const Section3 = () => {
           </div>
 
           <div
-            className="training3_card"
+            className="training2_card"
             data-aos="fade-down"
             data-aos-delay="600"
             data-aos-duration="1300"
