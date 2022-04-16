@@ -62,7 +62,7 @@ const Training = () => {
         <Header />
         <TrainingSection1 />
         <TrainingSection2 />
-        <TrainingSection3 />
+        {/* <TrainingSection3 /> */}
         <Footer />
       </div>
     </div>

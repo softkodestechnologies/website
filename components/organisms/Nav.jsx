@@ -90,7 +90,7 @@ const Nav = () => {
               animate={!culShow ? "initial" : "animate"}
             >
               <Image
-                src="/assets/nav_img8.jpg"
+                src="/assets/nav_img9.png"
                 alt="nav img"
                 width={323}
                 height={315}
@@ -105,11 +105,11 @@ const Nav = () => {
             >
               <div className="nav_img_culture_wrap">
                 <div
-                  className="nav_img_culture"
+                  className="nav_img_culture nav_drop"
                   style={{ position: "relative", zIndex: 10 }}
                 >
                   <Image
-                    src="/assets/nav_img9.jpg"
+                    src="/assets/nav_img8.png"
                     alt="nav img"
                     width={241}
                     height={212}
@@ -120,7 +120,7 @@ const Nav = () => {
                   style={{
                     position: "relative",
                     zIndex: 9,
-                    transform: "translateY(-96%) translateX(-20px)",
+                    transform: "translateY(-96%) translateX(-30px)",
                   }}
                 >
                   <Image
@@ -183,13 +183,13 @@ const Nav = () => {
                   >
                     <span></span>Career
                   </motion.li>
-                  <motion.li
+                  {/* <motion.li
                     onClick={() => move("news")}
                     onMouseEnter={() => setCurrColor("#e5e5e5")}
                     onMouseLeave={() => setCurrColor("#fff")}
                   >
                     <span></span>News
-                  </motion.li>
+                  </motion.li> */}
                   <motion.li
                     onMouseEnter={() => setCurrColor("#fff")}
                     onMouseLeave={() => setCurrColor("#fff")}

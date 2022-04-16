@@ -7,9 +7,12 @@ import {
   TrainingSection1,
   TrainingSection2,
   TrainingSection3,
-} from "../components";
+} from "../../components";
+import { useRouter } from "next/router";
 
 const Member = () => {
+  const router = useRouter();
+  const { name } = router.query;
   return (
     <div>
       <Head>
@@ -19,7 +22,7 @@ const Member = () => {
       </Head>
 
       <Header />
-      <MemberMain />
+      <MemberMain name={name} />
       <Footer />
     </div>
   );

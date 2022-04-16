@@ -1,11 +1,22 @@
-@media (max-width: 1250px) {
+@media (max-width: 1350px) {
   .section3 .section3_card::before {
-    -webkit-transform: rotate(-90deg) translateX(-110%) translateY(120%);
-            transform: rotate(-90deg) translateX(-110%) translateY(120%);
+    -webkit-transform: rotate(-90deg) translateX(-120%) translateY(200%);
+            transform: rotate(-90deg) translateX(-120%) translateY(200%);
   }
   .section3 .section3_card::after {
-    -webkit-transform: rotate(-90deg) translateX(-5%) translateY(-5%);
-            transform: rotate(-90deg) translateX(-5%) translateY(-5%);
+    -webkit-transform: rotate(-90deg) translateX(-25%) translateY(-85%);
+            transform: rotate(-90deg) translateX(-25%) translateY(-85%);
+  }
+}
+
+@media (max-width: 1250px) {
+  .section3 .section3_card::before {
+    -webkit-transform: rotate(-90deg) translateX(-120%) translateY(170%);
+            transform: rotate(-90deg) translateX(-120%) translateY(170%);
+  }
+  .section3 .section3_card::after {
+    -webkit-transform: rotate(-90deg) translateX(-25%) translateY(-65%);
+            transform: rotate(-90deg) translateX(-25%) translateY(-65%);
   }
   .section1_aux_img2 {
     width: 200px;
@@ -73,14 +84,14 @@ h2 {
     font-size: 24px;
   }
   .section3 .section3_card::before {
-    -webkit-transform: rotate(-90deg) translateX(-120%) translateY(90%);
-            transform: rotate(-90deg) translateX(-120%) translateY(90%);
-    font-size: 126px;
+    -webkit-transform: rotate(-90deg) translateX(-140%) translateY(130%);
+            transform: rotate(-90deg) translateX(-140%) translateY(130%);
+    font-size: 96px;
   }
   .section3 .section3_card::after {
-    -webkit-transform: rotate(-90deg) translateX(-20%) translateY(15%);
-            transform: rotate(-90deg) translateX(-20%) translateY(15%);
-    font-size: 126px;
+    -webkit-transform: rotate(-90deg) translateX(-50%) translateY(-45%);
+            transform: rotate(-90deg) translateX(-50%) translateY(-45%);
+    font-size: 96px;
   }
   .section6 .section6_cards .section6_card .content {
     font-size: 20px;
@@ -185,6 +196,33 @@ h2 {
 }
 
 @media (max-width: 1024px) {
+  .loading_left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .loading_right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .loading_centre {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .loading_wrap {
+    padding: 34px 25px 74px 25px;
+  }
+  .section2 .container {
+    padding-inline: 140px;
+  }
+  .nav_img_wrap {
+    display: none;
+  }
+  .nav .nav_con .nav_body {
+    gap: initial;
+  }
   .head_black {
     background-color: #000;
     color: #fff;
@@ -211,14 +249,14 @@ h2 {
     margin-left: 6rem;
   }
   .section3 .section3_card::before {
-    -webkit-transform: rotate(-90deg) translateX(-128%) translateY(100%);
-            transform: rotate(-90deg) translateX(-128%) translateY(100%);
-    font-size: 88px;
+    -webkit-transform: rotate(-90deg) translateX(-148%) translateY(140%);
+            transform: rotate(-90deg) translateX(-148%) translateY(140%);
+    font-size: 68px;
   }
   .section3 .section3_card::after {
-    -webkit-transform: rotate(-90deg) translateX(-40%) translateY(5%);
-            transform: rotate(-90deg) translateX(-40%) translateY(5%);
-    font-size: 88px;
+    -webkit-transform: rotate(-90deg) translateX(-70%) translateY(-85%);
+            transform: rotate(-90deg) translateX(-70%) translateY(-85%);
+    font-size: 68px;
   }
   .section3 .section3_card {
     max-width: 500px;
@@ -254,20 +292,11 @@ h2 {
   .section7 h1 {
     font-size: 60px;
   }
-  .loading_wrap {
-    padding: 74px 35px;
-  }
   .loading_left h1 {
     font-size: 30px;
   }
   .loading_right h1 {
     font-size: 30px;
-  }
-  .loading_centre {
-    min-width: 250px;
-  }
-  .loading_centre_wrap h1 {
-    padding: 40px 35px;
   }
   .project1 {
     padding-top: 3rem;
@@ -437,6 +466,37 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .ser_head_wrap .ser_em_wrap {
+    width: 100px;
+  }
+  .contact .contact_form_wrap form .budget h2 {
+    font-size: 28px;
+  }
+  .contact .contact_form_wrap form .services h2 {
+    font-size: 28px;
+  }
+  .loading_centre {
+    height: 250px;
+  }
+  .loading_centre_wrap h1 {
+    font-size: 60px;
+  }
+  .section6 .section6_cards .section6_card:nth-child(2) {
+    margin-top: 4.5rem;
+  }
+  .section6 .section6_cards .section6_card .image {
+    margin-top: 30px;
+  }
+  .section2 .container {
+    padding-inline: 60px;
+  }
+  .section6 .container {
+    padding: 0 60px;
+  }
+  .project3 h1 {
+    font-size: 40px;
+    margin-bottom: 3rem;
+  }
   .container {
     padding: 0 20px;
   }
@@ -456,6 +516,9 @@ h2 {
   header .container .bar_wrap .bars_aux,
   .head_black .container .bar_wrap .bars_aux {
     width: 25px;
+  }
+  .landing_hero {
+    position: static;
   }
   .landing_hero .hero_bread {
     left: -150px;
@@ -524,8 +587,8 @@ h2 {
     margin-left: 2rem;
   }
   .section3 .section3_card::before {
-    -webkit-transform: rotate(-90deg) translateX(-138%) translateY(90%);
-            transform: rotate(-90deg) translateX(-138%) translateY(90%);
+    -webkit-transform: rotate(-90deg) translateX(-158%) translateY(90%);
+            transform: rotate(-90deg) translateX(-158%) translateY(90%);
     font-size: 50px;
   }
   .section3 .section3_card::after {
@@ -563,7 +626,8 @@ h2 {
   }
   footer .footer_wrap .top .center h1,
   footer .footer_wrap .top .right h1 {
-    display: none;
+    font-size: 10px;
+    margin-bottom: 7px;
   }
   footer .footer_wrap .top .center,
   footer .footer_wrap .top .right {
@@ -574,7 +638,8 @@ h2 {
   }
   footer .footer_wrap .top .left h3 {
     font-size: 12px;
-    margin-bottom: 1rem;
+    margin-bottom: 8px;
+    margin-top: 8px;
   }
   footer .footer_wrap .top .left .image {
     width: 200px;
@@ -582,6 +647,7 @@ h2 {
   footer .footer_wrap .top .center li,
   footer .footer_wrap .top .right li {
     font-size: 12px;
+    margin-bottom: 1px;
   }
   footer .footer_wrap .bottom {
     font-size: 10px;
@@ -597,8 +663,8 @@ h2 {
   footer .footer_wrap .top {
     gap: 30px;
   }
-  .nav {
-    padding: 40px 50px;
+  .nav_con {
+    padding: 20px 50px;
   }
   .nav .nav_con .nav_body {
     -webkit-box-orient: vertical;
@@ -607,18 +673,22 @@ h2 {
             flex-direction: column;
   }
   .nav .nav_con .nav_body .nav_links1 ul li {
-    font-size: 35px;
+    font-size: 30px;
+    margin-bottom: 0.2rem;
+  }
+  .nav .nav_con .nav_header {
+    margin-bottom: 0rem;
   }
   .nav .nav_con .nav_body .nav_links1 ul li span {
     min-width: 25px;
     font-size: 20px;
   }
   .nav .nav_con .nav_body .nav_links2 ul h1 {
-    font-size: 40px;
+    font-size: 35px;
     margin-left: 25px;
   }
   .nav .nav_con .nav_body .nav_links2 ul li {
-    font-size: 28px;
+    font-size: 22px;
     margin-left: 25px;
   }
   .nav .nav_con .nav_body .nav_links2 {
@@ -842,6 +912,15 @@ h2 {
 }
 
 @media (max-width: 580px) {
+  .section2 .part1 .image {
+    width: 180px;
+  }
+  .section2 .part2 .image {
+    width: 180px;
+  }
+  .section4 h1 {
+    font-size: 32px;
+  }
   .section3 .section3_card::before {
     -webkit-transform: rotate(-90deg) translateX(-138%) translateY(80%);
             transform: rotate(-90deg) translateX(-138%) translateY(80%);
@@ -891,7 +970,7 @@ h2 {
   }
   footer .footer_wrap .top .center,
   footer .footer_wrap .top .right {
-    margin-top: 4em;
+    margin-top: 1em;
   }
   footer .footer_wrap .top .center li,
   footer .footer_wrap .top .right li {
@@ -910,32 +989,8 @@ h2 {
     padding: 3rem 1rem;
     font-size: 30px;
   }
-  .loading_wrap {
-    padding: 44px 15px;
-  }
-  .loading_left h1 {
-    font-size: 20px;
-  }
-  .loading_right h1 {
-    font-size: 20px;
-  }
-  .loading_centre {
-    min-width: 100px;
-    padding: 10px;
-  }
-  .loading_centre_wrap h1 {
-    padding: 30px 25px;
-    font-size: 25px;
-  }
-  .loading_centre_wrap:before,
-  .loading_centre_wrap:after {
-    height: 100vh;
-  }
   .nav .nav_con .nav_header .title {
     width: 160px;
-  }
-  .nav {
-    padding: 40px 20px;
   }
   .project1 h1 {
     font-size: 60px;
@@ -977,7 +1032,7 @@ input {
     height: 30px;
   }
   .contact .contact_form_wrap form .budget .budget_wrap .budget_btn {
-    font-size: 20px;
+    font-size: 16px;
   }
   .news .news_card {
     padding: 6rem 0;
@@ -1064,6 +1119,34 @@ h2 {
 }
 
 @media (max-width: 500px) {
+  .nav .nav_con .nav_header .nav_icon {
+    font-size: 1.4rem;
+  }
+  .nav .nav_con .nav_header .title {
+    width: 120px;
+  }
+  .loading_centre {
+    height: 180px;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  .loading_left h1 {
+    font-size: 22px;
+  }
+  .loading_right h1 {
+    font-size: 22px;
+  }
+  .loading_centre_wrap h1 {
+    font-size: 24px;
+  }
+  .contact .contact_form_wrap form .budget .budget_wrap .budget_btn {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  .section2 .container {
+    padding-inline: 30px;
+  }
   .landing_hero .landing_hero_wrap .hero_content .div_1 {
     max-width: 90vw;
     font-size: 24px;
@@ -1215,6 +1298,15 @@ h2 {
 }
 
 @media (max-width: 400px) {
+  .loading_left h1 {
+    font-size: 18px;
+  }
+  .loading_right h1 {
+    font-size: 18px;
+  }
+  .section6 .container {
+    padding: 0 20px;
+  }
   .section4 .section4_parts .section4_part .parallax_wrap {
     width: 225px;
     height: auto;
@@ -1321,6 +1413,15 @@ h2 {
 }
 
 @media (max-width: 350px) {
+  .loading_left h1 {
+    font-size: 16px;
+  }
+  .loading_right h1 {
+    font-size: 16px;
+  }
+  .loading_centre {
+    height: 150px;
+  }
   .career_section4 .search_cards .search_card {
     width: 290px;
   }

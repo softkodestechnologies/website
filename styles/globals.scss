@@ -884,6 +884,10 @@ footer {
 }
 
 // Navigation Styling
+.nav_drop {
+  background-color: rgba(0, 0, 0, 0.33);
+  width: fit-content;
+}
 .img_culture_2 {
   transform: rotate(0deg) translateX(-15px) translateY(-10px);
 }
@@ -1192,6 +1196,7 @@ footer {
         background-color: #000;
         color: #fff;
         border-radius: 5px;
+        border-width: 0;
       }
     }
   }
@@ -1300,6 +1305,7 @@ footer {
     }
     .one {
       text-align: center;
+      cursor: pointer;
     }
     .two_btns button {
       color: gray;
@@ -1344,10 +1350,18 @@ footer {
   margin-top: 80px;
   h1 {
     text-align: center;
-    font-size: 102px;
+    font-size: 92px;
     font-weight: 400;
     line-height: 110px;
     font-weight: 300;
+    div {
+      margin-bottom: 20px;
+    }
+    span {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
   }
   .contact_form_wrap {
     form {

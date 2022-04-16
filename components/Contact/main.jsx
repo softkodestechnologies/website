@@ -15,8 +15,20 @@ const Main = () => {
     <section className="contact">
       <div className="container">
         <h1 data-aos="fade-down" data-aos-delay="400" data-aos-duration="1300">
-          Hi! <br /> Tell us what you want
+          <div>Hi!</div> <div>Tell us what you</div>
+          <span>
+            want
+            <div className="ser_em_wrap_aux">
+              <Image
+                alt="emoji"
+                src="/assets/con_emoji3.svg"
+                width={162}
+                height={155}
+              />
+            </div>
+          </span>
         </h1>
+
         <div
           className="contact_form_wrap"
           data-aos="fade-down"

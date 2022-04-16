@@ -302,7 +302,7 @@
     font-size: 65px;
   }
   .contact h1 {
-    font-size: 120px;
+    font-size: 92px;
   }
   .contact
     .contact_form_wrap
@@ -442,8 +442,10 @@
   .ser_head_wrap {
     .ser_em_wrap {
       width: 100px;
-
     }
+  }
+  .ser_em_wrap_aux {
+    width: 100px;
   }
   .contact .contact_form_wrap form .budget h2 {
     font-size: 28px;
@@ -760,6 +762,9 @@
   .contact h1 {
     font-size: 65px;
     line-height: 100px;
+    div {
+      margin-bottom: 0px;
+    }
   }
 
   .contact
@@ -1108,6 +1113,18 @@
 }
 
 @media (max-width: 500px) {
+  .ser_em_wrap_aux {
+    width: 70px;
+  }
+  .contact h1 {
+    font-size: 40px;
+    span {
+      align-items: center;
+    }
+    div {
+      line-height: 4rem;
+    }
+  }
   .nav .nav_con .nav_header .nav_icon {
     font-size: 1.4rem;
   }
@@ -1333,8 +1350,8 @@
     grid-template-columns: 1fr;
   }
   .contact h1 {
-    font-size: 50px;
-    line-height: 70px;
+    font-size: 40px;
+    // line-height: 70px;
   }
   .contact .contact_form_wrap form .services h2 {
     font-size: 28px;

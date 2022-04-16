@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const main = () => {
+const main = ({ name }) => {
   return (
     <section className="member">
       <div className="container">
@@ -19,7 +19,7 @@ const main = () => {
             <div className="member_head_img">
               <Image src="/assets/ring.svg" alt="ring" width={63} height={63} />
             </div>
-            <h2>Web Design</h2>
+            <h2>{name}</h2>
           </div>
           <h3
             data-aos="fade-down"
@@ -29,14 +29,30 @@ const main = () => {
             Fill-in your details and a representative will be in touch with you
             shortly.
           </h3>
-          <form>
+          <form
+            action="https://formsubmit.co/info@softkodesllc.com"
+            method="POST"
+          >
+            <input
+              type="text"
+              required
+              hidden
+              name="Course Name"
+              readOnly
+              value={name}
+            />
             <div
               className="control"
               data-aos="fade-down"
               data-aos-delay="400"
               data-aos-duration="1300"
             >
-              <input type="text" placeholder="Enter First Name*" />
+              <input
+                required
+                type="text"
+                name="First Name"
+                placeholder="Enter First Name"
+              />
             </div>
             <div
               className="control"
@@ -44,7 +60,12 @@ const main = () => {
               data-aos-delay="400"
               data-aos-duration="1300"
             >
-              <input type="text" placeholder="Enter Last Name*" />
+              <input
+                required
+                type="text"
+                name="Last Name"
+                placeholder="Enter Last Name"
+              />
             </div>
             <div
               className="control"
@@ -52,7 +73,12 @@ const main = () => {
               data-aos-delay="400"
               data-aos-duration="1300"
             >
-              <input type="text" placeholder="Enter Email Name*" />
+              <input
+                required
+                type="email"
+                name="Email Address"
+                placeholder="Enter Email "
+              />
             </div>
             <div
               className="control"
@@ -60,7 +86,12 @@ const main = () => {
               data-aos-delay="400"
               data-aos-duration="1300"
             >
-              <input type="text" placeholder="Enter Phone Name*" />
+              <input
+                required
+                type="text"
+                name="Phone Number"
+                placeholder="Enter Phone Number"
+              />
             </div>
             <div
               className="control"
@@ -68,7 +99,12 @@ const main = () => {
               data-aos-delay="400"
               data-aos-duration="1300"
             >
-              <input type="text" placeholder="Date Of birth*" />
+              <input
+                type="date"
+                name="Date of Birth"
+                required
+                placeholder="Date Of birth*"
+              />
             </div>
             <div
               className="control"
@@ -76,7 +112,12 @@ const main = () => {
               data-aos-delay="400"
               data-aos-duration="1300"
             >
-              <input type="text" placeholder="Home Address*" />
+              <input
+                type="text"
+                name="Home Address"
+                required
+                placeholder="Home Address*"
+              />
             </div>
             <div
               className="control"
@@ -85,39 +126,21 @@ const main = () => {
               data-aos-duration="1300"
             >
               <textarea
-                name=""
+                name="Academic Background"
                 id=""
+                required
                 rows="5"
-                placeholder="Tell Us About Your Acedemics Background*"
+                placeholder="Tell Us About Your Academic Background*"
               ></textarea>
             </div>
+
             <div
               className="control"
               data-aos="fade-down"
               data-aos-delay="400"
               data-aos-duration="1300"
-            >
-              <textarea
-                name=""
-                id=""
-                rows="5"
-                placeholder="Tell Us About Your Acedemics Background*"
-              ></textarea>
-            </div>
-            <div
-              className="control"
-              data-aos="fade-down"
-              data-aos-delay="400"
-              data-aos-duration="1300"
-            >
-              <textarea
-                name=""
-                id=""
-                rows="5"
-                placeholder=" Tell Us About Your Acedemics Background*"
-              ></textarea>
-            </div>
-            <div
+            ></div>
+            {/* <div
               className="two_btns"
               data-aos="fade-down"
               data-aos-delay="400"
@@ -125,14 +148,14 @@ const main = () => {
             >
               <button>Add Course</button>
               <button>Delete Course</button>
-            </div>
+            </div> */}
             <div
               className="one"
               data-aos="fade-down"
               data-aos-delay="400"
               data-aos-duration="1300"
             >
-              <button>Delete</button>
+              <button>Submit</button>
             </div>
           </form>
         </div>
