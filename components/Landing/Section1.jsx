@@ -15,12 +15,12 @@ const Section1 = () => {
     };
   }, []);
   const checkOp = () => {
-    if (window.scrollY * 5 - 850 < 0) {
+    if (window.scrollY * 8 - 820 < 0) {
       setCard1Op(0 + window.scrollY * 0.0125);
-      setCard1Pos(window.scrollY * 5 - 800);
-      setCard2Pos(-window.scrollY * 5 + 800);
+      setCard1Pos(window.scrollY * 8 - 800);
+      setCard2Pos(-window.scrollY * 8 + 800);
       setCard1Scale(1.1 - window.scrollY * 0.0008);
-      if (window.scrollY * 5 - 800 > -400 || window.scrollY * 5 - 800 < -800) {
+      if (window.scrollY * 8 - 800 > -400 || window.scrollY * 8 - 800 < -800) {
         setCard2Op(1);
       } else {
         setCard2Op(0);
