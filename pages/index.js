@@ -17,6 +17,7 @@ import {
 } from "../components";
 import { AnimatePresence, motion } from "framer-motion";
 import { useGeneralContext } from "../context/GeneralContext";
+import { Controller, Scene } from "react-scrollmagic";
 
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
@@ -132,6 +133,7 @@ export default function Home() {
             <Loading loading={loading} percent={percent} />
           </motion.div>
         ) : (
+          // <Controller>
           <motion.div
             variants={variants}
             initial="hidden"
@@ -152,6 +154,7 @@ export default function Home() {
             <Section8 />
             <Footer />
           </motion.div>
+          // </Controller>
         )}
         {/* </AnimatePresence> */}
       </div>

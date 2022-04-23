@@ -9,7 +9,7 @@ const LoadingScreen = ({ loading, percent }) => {
         <div className="loading_left_img">
           <Image src="/assets/title_new.svg" alt="" height={75} width={271} />
         </div>
-        <h1>Experience</h1>
+        <h1 className="blink_anim">Experience</h1>
       </div>
       <div className="loading_centre">
         <div className="loading_centre_wrap">
@@ -17,7 +17,7 @@ const LoadingScreen = ({ loading, percent }) => {
         </div>
       </div>
       <div className="loading_right">
-        <h1>Loading...</h1>
+        <h1 className="blink_anim">Loading...</h1>
       </div>
     </div>
   );

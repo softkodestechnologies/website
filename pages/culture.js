@@ -35,7 +35,6 @@ const Culture = () => {
 
   const checkBg = () => {
     console.log(window.scrollY);
-    console.log("dcc");
   };
 
   return (

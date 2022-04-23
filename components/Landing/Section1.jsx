@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { Controller, Scene } from "react-scrollmagic";
+import { Timeline, Tween } from "react-gsap";
 
 const Section1 = () => {
   const [card1Pos, setCard1Pos] = useState(-800);
@@ -8,11 +10,11 @@ const Section1 = () => {
   const [card1Scale, setCard1Scale] = useState(1.3);
   const [card2Pos, setCard2Pos] = useState(800);
   useEffect(() => {
-    if (!window) return;
-    window.addEventListener("scroll", checkOp);
-    return () => {
-      window.removeEventListener("scroll", checkOp);
-    };
+    // if (!window) return;
+    // window.addEventListener("scroll", checkOp);
+    // return () => {
+    //   window.removeEventListener("scroll", checkOp);
+    // };
   }, []);
   const checkOp = () => {
     if (window.scrollY * 8 - 820 < 0) {
@@ -35,135 +37,161 @@ const Section1 = () => {
             {/* <h1 data-aos="fade-down" data-aos-delay="300">
               WHAT WE DO
             </h1> */}
+
             <div className="section1_cards">
-              <div
-                className="card"
-                // data-aos="fade-up-right"
-                // data-aos-delay="450"
-                style={{
-                  opacity: card1Op,
-                  transform: `scale(${card1Scale}) translateX(${card1Pos}px)`,
-                }}
-              >
-                <div className="card_image">
-                  <Image
-                    src="/assets/image39.png"
-                    alt="test"
-                    width={343}
-                    height={455}
-                  />
-                </div>
+              <div className="sticky_styled">
+                <Controller>
+                  <Scene triggerHook="onLeave" duration={1000} pin>
+                    {(progress) => (
+                      <div className="section1_cards1">
+                        <Timeline totalProgress={progress} paused>
+                          <Tween
+                            from={{ x: "-100%", opacity: 0, scale: "1.6" }}
+                            to={{ x: "0%", opacity: 1, scale: "1" }}
+                          >
+                            <div
+                              className="card"
+                              // data-aos="fade-up-right"
+                              // data-aos-delay="450"
+                              // style={{
+                              //   opacity: card1Op,
+                              //   transform: `scale(${card1Scale}) translateX(${card1Pos}px)`,
+                              // }}
+                            >
+                              <div className="card_image">
+                                <Image
+                                  src="/assets/image39.png"
+                                  alt="test"
+                                  width={343}
+                                  height={455}
+                                />
+                              </div>
+                            </div>
+                          </Tween>
+                        </Timeline>
+                        <div
+                          className="card"
+                          // style={{
+                          //   opacity: card2Op,
+                          //   transition: "0.1s all ease",
+                          // }}
+                          // data-aos="fade-down"
+                          // data-aos-delay="450"
+                        >
+                          <div className="card_image">
+                            <Image
+                              src="/assets/image41.png"
+                              alt="test"
+                              width={343}
+                              height={455}
+                            />
+                          </div>
+                          <div className="content cont_blur">
+                            <h3>Development</h3>
+                            <p>
+                              We specialise in Web development, android
+                              development, IOS development, HTML/CSS/JS,
+                              Backend/API, integrated word press
+                            </p>
+                          </div>
+                        </div>
+                        <Timeline totalProgress={progress} paused>
+                          <Tween
+                            from={{ x: "100%", opacity: 0, scale: "1.6" }}
+                            to={{ x: "0%", opacity: 1, scale: "1" }}
+                          >
+                            <div
+                              className="card"
+                              // style={{
+                              //   opacity: card1Op,
+                              //   transform: `scale(${card1Scale}) translateX(${card2Pos}px)`,
+                              // }}
+                              // data-aos="fade-down-left"
+                              // data-aos-delay="450"
+                            >
+                              <div className="card_image">
+                                <Image
+                                  src="/assets/image42.png"
+                                  alt="test"
+                                  width={343}
+                                  height={455}
+                                />
+                              </div>
+                            </div>
+                          </Tween>
+                        </Timeline>
+                      </div>
+                    )}
+                  </Scene>
+                </Controller>
               </div>
+              <div className="section1_cards2">
+                <div
+                  className="card"
+                  id="bg-1"
+                  data-aos="zoom-out-right"
+                  data-aos-delay="450"
+                >
+                  <div className="card_image">
+                    <Image
+                      src="/assets/image43.png"
+                      alt="test"
+                      width={343}
+                      height={455}
+                    />
+                  </div>
+                  <div className="content cont_blur">
+                    <h3>Design</h3>
+                    <p>
+                      We provide dhesign services ranging from Animation,
+                      Iconography, 2D/3D graphics.
+                    </p>
+                  </div>
+                </div>
 
-              <div
-                className="card"
-                style={{
-                  opacity: card2Op,
-                  transition: "0.1s all ease",
-                }}
-                data-aos="fade-down"
-                data-aos-delay="450"
-              >
-                <div className="card_image">
-                  <Image
-                    src="/assets/image41.png"
-                    alt="test"
-                    width={343}
-                    height={455}
-                  />
+                <div
+                  className="card"
+                  data-aos="zoom-out-down"
+                  data-aos-delay="450"
+                >
+                  <div className="card_image">
+                    <Image
+                      src="/assets/image44.png"
+                      alt="test"
+                      width={343}
+                      height={455}
+                    />
+                  </div>
+                  <div className="content cont_blur">
+                    <h3>Development</h3>
+                    <p>
+                      Our designs are tailored to be functional, aesthetically
+                      pleasing and to represents the brand’s vision adequately.
+                    </p>
+                  </div>
                 </div>
-                <div className="content cont_blur">
-                  <h3>Development</h3>
-                  <p>
-                    We specialise in Web development, android development, IOS
-                    development, HTML/CSS/JS, Backend/API, integrated word press
-                  </p>
-                </div>
-              </div>
-              <div
-                className="card"
-                style={{
-                  opacity: card1Op,
-                  transform: `scale(${card1Scale}) translateX(${card2Pos}px)`,
-                }}
-                // data-aos="fade-down-left"
-                // data-aos-delay="450"
-              >
-                <div className="card_image">
-                  <Image
-                    src="/assets/image42.png"
-                    alt="test"
-                    width={343}
-                    height={455}
-                  />
-                </div>
-              </div>
 
-              <div
-                className="card"
-                id="bg-1"
-                data-aos="zoom-out-right"
-                data-aos-delay="450"
-              >
-                <div className="card_image">
-                  <Image
-                    src="/assets/image43.png"
-                    alt="test"
-                    width={343}
-                    height={455}
-                  />
-                </div>
-                <div className="content cont_blur">
-                  <h3>Design</h3>
-                  <p>
-                    We provide dhesign services ranging from Animation,
-                    Iconography, 2D/3D graphics.
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className="card"
-                data-aos="zoom-out-down"
-                data-aos-delay="450"
-              >
-                <div className="card_image">
-                  <Image
-                    src="/assets/image44.png"
-                    alt="test"
-                    width={343}
-                    height={455}
-                  />
-                </div>
-                <div className="content cont_blur">
-                  <h3>Development</h3>
-                  <p>
-                    Our designs are tailored to be functional, aesthetically
-                    pleasing and to represents the brand’s vision adequately.
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className="card"
-                data-aos="zoom-out-left"
-                data-aos-delay="450"
-              >
-                <div className="card_image">
-                  <Image
-                    src="/assets/image_37.png"
-                    alt="test"
-                    width={343}
-                    height={455}
-                  />
-                </div>
-                <div className="content cont_blur">
-                  <h3>Training</h3>
-                  <p>
-                    We offer intensive and thorough training on Ui/Ux Design,
-                    Graphic Design, Mobile Development, Web Development and Game
-                    Development
-                  </p>
+                <div
+                  className="card"
+                  data-aos="zoom-out-left"
+                  data-aos-delay="450"
+                >
+                  <div className="card_image">
+                    <Image
+                      src="/assets/image_37.png"
+                      alt="test"
+                      width={343}
+                      height={455}
+                    />
+                  </div>
+                  <div className="content cont_blur">
+                    <h3>Training</h3>
+                    <p>
+                      We offer intensive and thorough training on Ui/Ux Design,
+                      Graphic Design, Mobile Development, Web Development and
+                      Game Development
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

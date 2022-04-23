@@ -100,6 +100,20 @@ a {
 }
 
 /* Loading Screen Styling */
+.blink_anim {
+  animation-name: blink;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes blink {
+  0% { opacity: 1 }
+  100% { opacity: 0.5 }
+  0% { opacity: 1 }
+}
+
 .loading_wrap {
   display: flex;
   justify-content: space-between;
@@ -224,13 +238,15 @@ header,
 
 // Landing Page Hero
 .landing_hero {
-  position: fixed;
-  left: 0;
-  top: 0;
+  // position: fixed;
+  // left: 0;
+  // top: 0;
+  height: 100vh;
+    width: 100%;
   width: 100vw;
   font-family: Recoleta Thin;
   padding: 10px 0 80px 0;
-  margin-top: 44px;
+  margin-top: 84px;
   .hero_bread {
     position: absolute;
     left: -80px;
@@ -326,6 +342,16 @@ header,
   }
 }
 
+
+.sticky_styled {
+  overflow: hidden;
+  .section1_cards1 {
+    padding-bottom: 3rem;
+    height: 100vh;
+    width: 100%;
+    padding-top: 8rem;
+  }
+}
 // Landing Page Section 1
 .section1 {
   margin-top: 6rem;
@@ -344,12 +370,18 @@ header,
       text-align: center;
     }
     .section1_cards {
-      display: grid;
-      grid-auto-rows: max-content;
-      grid-template-columns: repeat(3, 1fr);
-      row-gap: 169px;
-      column-gap: 52px;
       // align-items: center;
+      .section1_cards1, .section1_cards2 {
+        display: grid;
+        grid-auto-rows: max-content;
+        grid-template-columns: repeat(3, 1fr);
+        // row-gap: 169px;
+        column-gap: 52px;
+      }
+      .section2_cards2 {
+        margin-top: 3rem;
+      }
+
       .card {
         text-align: center;
 
