@@ -18,7 +18,6 @@ const ScrollContainer = dynamic(
 );
 
 function MyApp({ Component, pageProps }) {
-  console.log("eeji");
   const router = useRouter();
   useEffect(() => {
     // here you can add your aos options
